@@ -2,6 +2,7 @@ import React from "react";
 import { Typography } from "@material-ui/core";
 import { ProfileShadow, ProfileName, ProfileInfo, ProfileImg } from "./style";
 import myImg from "../../assets/images/user.png";
+import CustomTimeLine from "../CustomTimeLine";
 const Profile = () => {
   return (
     <ProfileShadow>
@@ -13,7 +14,7 @@ const Profile = () => {
         <img src={myImg} alt="something is wrong" />
       </ProfileImg>
       <ProfileInfo>
-        Insert TimeLine
+        <CustomTimeLine />
         <br />
         <button>my button</button>
       </ProfileInfo>
