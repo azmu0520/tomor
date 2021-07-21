@@ -1,0 +1,25 @@
+.timeline-content {
+  margin-top: 2px;
+  margin-bottom: 12px;
+}
+
+.timeline-content a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #787878;
+  font-weight: 400;
+  padding-left: 1rem;
+}
+
+.typography {
+  white-space: nowrap;
+  font-size: 14px;
+  color: #787878;
+  font-weight: 400;
+}
+
+.typography span {
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+}

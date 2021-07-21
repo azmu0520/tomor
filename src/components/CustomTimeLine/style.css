@@ -3,7 +3,11 @@
 }
 /* Header */
 .timeline-header {
-  padding-top: 9px;
+  padding-top: 4rem !important;
+}
+
+.timeline .MuiTimelineContent-root {
+  padding: 0px 16px;
 }
 
 .timeline-firstItem {

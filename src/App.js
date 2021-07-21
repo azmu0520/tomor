@@ -9,8 +9,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <Container>
-      <Grid container>
+    <Container className="container-shadow">
+      <Grid container className="grid-container">
         <Grid item xs={12} sm={12} md={4} lg={3}>
           <Profile />
         </Grid>
