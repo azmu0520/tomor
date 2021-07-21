@@ -7,17 +7,20 @@
   padding: 1px 12px !important;
   line-height: 35px !important;
   min-width: 100px !important;
-  outline: none !important;
+}
+
+.custom-btn .MuiSvgIcon-root {
+  font-size: 17px;
 }
 
 .icon-container {
   color: #000 !important;
-  background: red !important;
+  background: #fff !important;
   border-radius: 50px !important;
   height: 27px !important;
   width: 27px !important;
   line-height: 29px !important;
-  text-align: center;
+  text-align: center !important;
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
@@ -26,7 +29,7 @@
 .btn-text {
   font-size: 14px !important;
   text-transform: none !important;
-  align-items: center !important;
+  text-align: center !important;
   width: 100% !important;
   margin-right: 5px !important;
   margin-left: 5px !important;
