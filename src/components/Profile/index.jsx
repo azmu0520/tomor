@@ -9,6 +9,7 @@ import TimelineItem from "@material-ui/lab/TimelineItem";
 import TimelineContent from "@material-ui/lab/TimelineContent";
 import "./Profile.css";
 import CustomButton from "../Button";
+import GetAppRoundedIcon from "@material-ui/icons/GetAppRounded";
 
 const Profile = () => {
   const CustomTimelineItem = ({ title, text, link }) => (
@@ -53,7 +54,9 @@ const Profile = () => {
             />
           ))}
         </CustomTimeLine>
-        <CustomButton text={"Download Cv"} />
+        <div className="btn-wrap">
+          <CustomButton text={"Download Cv"} icon={<GetAppRoundedIcon />} />
+        </div>
       </ProfileInfo>
     </ProfileShadow>
   );

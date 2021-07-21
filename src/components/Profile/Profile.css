@@ -23,3 +23,11 @@
   font-weight: 500;
   color: black;
 }
+
+.btn-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
