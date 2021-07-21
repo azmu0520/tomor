@@ -1,5 +1,4 @@
 import styled from "styled-components";
-// import myImage from "../../assets/images/user.jpg";
 export const ProfileShadow = styled.div`
   border-radius: 6px;
   width: 100%;
@@ -26,4 +25,8 @@ export const ProfileName = styled.div`
   }
 `;
 
-export const ProfileInfo = styled.div``;
+export const ProfileInfo = styled.div`
+  top: 0;
+  left: 0;
+  margin: -40px 10px 30px;
+`;
