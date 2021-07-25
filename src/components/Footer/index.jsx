@@ -1,15 +1,19 @@
 import { Typography } from "@material-ui/core";
 import React from "react";
 import "./style.css";
+import resumeData from "../../utils/resumeData";
 const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-left">
-        <Typography className="footer-name">Azizbek Mukhtorov</Typography>
+        <Typography className="footer-name">{resumeData.name}</Typography>
       </div>
       <div className="footer-left">
         <Typography className="footer-auther">
-          Designed and Developed by <a href="">Azizbek Mukhtorov</a>
+          Designed and Developed by{" "}
+          <a target="_blank" href={resumeData.socials.Github.link}>
+            Azizbek Mukhtorov
+          </a>
         </Typography>
       </div>
     </div>

@@ -23,3 +23,11 @@
 .grid-container {
   grid-gap: 30px 50px;
 }
+.main-content {
+  background-color: white;
+  min-height: 100vh;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  margin-bottom: 30px;
+}
