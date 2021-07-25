@@ -1,1 +1,29 @@
+.about-text {
+  color: rgb(44, 51, 51);
+  font-size: smaller;
+  line-height: 30px !important;
+  white-space: pre-line !important;
+}
 
+.section-title {
+  margin-bottom: 20px !important;
+}
+
+.about-text {
+  margin-bottom: 20px !important;
+}
+
+.edu-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.edu-date {
+  color: darkslategray;
+}
+
+.edu-des {
+  color: gray;
+  font-size: small;
+  margin-top: 6px;
+}

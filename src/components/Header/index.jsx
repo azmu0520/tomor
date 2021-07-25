@@ -1,25 +1,9 @@
 import React from "react";
-import {
-  Button,
-  Navbar,
-  Form,
-  FormControl,
-  Nav,
-  NavDropdown,
-} from "react-bootstrap";
-import {
-  Telegram,
-  Facebook,
-  Twitter,
-  HomeRounded,
-  SchoolRounded,
-  WorkRounded,
-  LinkedIn,
-  GitHub,
-} from "@material-ui/icons";
+import { Navbar, Nav } from "react-bootstrap";
+import { Telegram, HomeRounded } from "@material-ui/icons";
 import "bootstrap/dist/css/bootstrap.min.css";
 import resumeData from "../../utils/resumeData";
-import { Link, NavLink, withRouter } from "react-router-dom";
+import { NavLink, withRouter } from "react-router-dom";
 import "./style.css";
 import CustomButton from "../Button";
 
@@ -38,7 +22,7 @@ const Header = (props) => {
           <Nav.Link
             as={NavLink}
             to="/"
-            className={pathName == "/" ? "header-link-active" : "header-link"}
+            className={pathName === "/" ? "header-link-active" : "header-link"}
           >
             Resume
           </Nav.Link>
@@ -46,7 +30,7 @@ const Header = (props) => {
             as={NavLink}
             to="/portfolio"
             className={
-              pathName == "/portfolio" ? "header-link-active" : "header-link"
+              pathName === "/portfolio" ? "header-link-active" : "header-link"
             }
           >
             Portfolio
@@ -55,7 +39,7 @@ const Header = (props) => {
             as={NavLink}
             to="/blog"
             className={
-              pathName == "/blog" ? "header-link-active" : "header-link"
+              pathName === "/blog" ? "header-link-active" : "header-link"
             }
           >
             Blog
@@ -64,7 +48,7 @@ const Header = (props) => {
             as={NavLink}
             to="/contact"
             className={
-              pathName == "/contact" ? "header-link-active" : "header-link"
+              pathName === "/contact" ? "header-link-active" : "header-link"
             }
           >
             Contact
@@ -72,7 +56,11 @@ const Header = (props) => {
         </Nav>
         <div className="header-right">
           {Object.keys(resumeData.socials).map((key) => (
-            <a href={resumeData.socials[key].link} target="_blank">
+            <a
+              href={resumeData.socials[key].link}
+              target="_blank"
+              rel="noreferrer"
+            >
               {resumeData.socials[key].icon}
             </a>
           ))}
