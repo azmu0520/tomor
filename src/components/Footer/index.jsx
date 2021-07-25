@@ -11,7 +11,11 @@ const Footer = () => {
       <div className="footer-left">
         <Typography className="footer-auther">
           Designed and Developed by{" "}
-          <a target="_blank" href={resumeData.socials.Github.link}>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={resumeData.socials.Github.link}
+          >
             Azizbek Mukhtorov
           </a>
         </Typography>
