@@ -9,6 +9,7 @@ export const ProfileImg = styled.div`
   margin-top: -10px;
   img {
     width: 100%;
+    border-radius: 30px;
   }
 `;
 export const ProfileName = styled.div`
