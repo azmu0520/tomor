@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@material-ui/core";
+import { Grid, Icon, Paper, Typography } from "@material-ui/core";
 import React from "react";
 import "./style.css";
 import resumeData from "../../utils/resumeData";
@@ -8,6 +8,7 @@ import SchoolIcon from "@material-ui/icons/School";
 import TimelineItem from "@material-ui/lab/TimelineItem";
 import { TimeLineCustomSeparator } from "../../components/CustomTimeLine";
 import TimelineContent from "@material-ui/lab/TimelineContent";
+import TimelineDot from "@material-ui/lab/TimelineDot";
 const Resume = () => {
   return (
     <>
@@ -75,9 +76,47 @@ const Resume = () => {
         </Grid>
       </Grid>
       {/* Services */}
-      <Grid container className="section"></Grid>
+      {/* <Grid container className="section">
+        <Grid item className="section-title">
+          <span></span>
+          <h6 className="section-title">My Services</h6>
+          <Grid item xs={12}>
+            <Grid container>
+              {resumeData.services.map((service) => (
+                <Grid item xs={12} sm={6} md={3}>
+                  <div className="service">
+                    <Icon className="service-icon">{service.icon}</Icon>
+                    <Typography className="service-title">
+                      {service.title}
+                    </Typography>
+                    <Typography className="service-describtion">
+                      {service.describtion}
+                    </Typography>
+                  </div>
+                </Grid>
+              ))}
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid> */}
       {/* Skills */}
-      <Grid container className="section"></Grid>
+      <Grid container className="section" spacing={3} justify="space-between">
+        {resumeData.skills.map((skill) => (
+          <Grid item xs={12} sm={6} md={3}>
+            <Paper elevation={0} className="skill">
+              <Typography variant="h6" className="skill-title">
+                {skill.title}
+              </Typography>
+              {skill.describtion.map((element) => (
+                <Typography variant="body2" className="skill-describtion">
+                  <TimelineDot variant={"outlined"} className="timeline-dot" />
+                  {element}
+                </Typography>
+              ))}
+            </Paper>
+          </Grid>
+        ))}
+      </Grid>
       {/* Contact */}
       <Grid container className="section"></Grid>
     </>

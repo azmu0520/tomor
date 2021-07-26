@@ -1,4 +1,11 @@
-import { Facebook, GitHub, LinkedIn, Twitter } from "@material-ui/icons";
+import {
+  AssignmentOutlined,
+  Facebook,
+  GitHub,
+  LinkedIn,
+  Twitter,
+  WebOutlined,
+} from "@material-ui/icons";
 import React from "react";
 
 export default {
@@ -71,6 +78,49 @@ Communicating technical issues in an understandable manner to the team and clien
       date: "2018-2019",
       describtion:
         "It is the only and most powerful educational institution in Uzbekistan with the name of English language training center, but It teaches you the lifehacks you will need all your life. I will never forget this place",
+    },
+  ],
+
+  services: [
+    {
+      title: "Web Development",
+      describtion: "",
+      icon: <WebOutlined />,
+    },
+    {
+      title: "Branding",
+      describtion: "",
+      icon: <AssignmentOutlined />,
+    },
+    {
+      title: "Web Development",
+      describtion: "",
+      icon: <WebOutlined />,
+    },
+  ],
+
+  skills: [
+    {
+      title: "FRONT0-END",
+      describtion: [
+        "ReactJS",
+        "Redux",
+        "JavaScript",
+        "Bootstrap",
+        "Material UI",
+      ],
+    },
+    {
+      title: "BACK-END",
+      describtion: ["COMING SOON"],
+    },
+    {
+      title: "DATABASES",
+      describtion: ["Firebase"],
+    },
+    {
+      title: "SOURCE CONTROL",
+      describtion: ["Git", "GitHub"],
     },
   ],
 };
