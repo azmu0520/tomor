@@ -55,3 +55,12 @@
   padding: 2px !important;
   margin-right: 5px !important;
 }
+
+.section-title .typograf {
+  width: inherit !important;
+  margin: 0 !important;
+}
+
+.section-title span {
+  /* width: 5; */
+}
