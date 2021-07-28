@@ -61,6 +61,37 @@
   margin: 0 !important;
 }
 
-.section-title span {
-  /* width: 5; */
+.contactinfo {
+  font-size: 14px;
+  color: #787878;
+  margin: 10px 0 !important;
+}
+.contactinfo > span {
+  color: black;
+  font-weight: 500;
+}
+
+.contactInfo-social > a > .MuiSvgIcon-root {
+  font-size: 18px;
+  margin-right: 10px;
+  color: rgb(21, 100, 124);
+}
+
+.ContactMargin {
+  margin-left: 30px;
+  /* margin-top: 20px; */
+}
+
+.marginTop {
+  margin-top: 40px;
+}
+
+.form-control .text {
+  border-style: none;
+  background: none;
+  padding: 0.7rem 20rem 0.7rem 0;
+}
+
+.form-control {
+  padding: 0 !important;
 }

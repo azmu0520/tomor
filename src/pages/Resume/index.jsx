@@ -10,7 +10,28 @@ import { TimeLineCustomSeparator } from '../../components/CustomTimeLine';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import CustomButton from '../../components/Button';
+import emailjs from 'emailjs-com';
 const Resume = () => {
+  const sendMail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'gmail',
+        'template_zlsls36',
+        e.target,
+        'user_67JngnoFNDpDLTCnk62Zm'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
   return (
     <>
       {/* About */}
@@ -96,54 +117,122 @@ const Resume = () => {
         ))}
       </Grid>
       {/* Contact */}
-      <Grid container className='section'>
-        <Grid item className='section-title'>
-          <span></span>
-          <Typography variant='h6'>Contact Form</Typography>
-        </Grid>
-        <Grid item xs={12}>
-          <Grid container spacing={2}>
-            <Grid item xs={12} sm={6}>
-              <TextField fullWidth name='name' label='Name' />
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <TextField fullWidth name='email' label='E-mail' />
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <TextField
-                fullWidth
-                name='message'
-                label='Message'
-                multiline
-                rows={4}
-              />
+      <Grid container className='section marginTop'>
+        <Grid item xs={12} lg={7}>
+          <Grid container>
+            <Grid item className='section-title'>
+              <span></span>
+              <Typography variant='h6'>Contact Form</Typography>
             </Grid>
             <Grid item xs={12}>
-              <CustomButton text='Submit' />
+              <Grid container spacing={2}>
+                {/* <Grid item xs={12} sm={6}>
+                  <TextField fullWidth name='name' label='Name' />
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <TextField fullWidth name='email' label='E-mail' />
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <TextField
+                    fullWidth
+                    name='message'
+                    label='Message'
+                    multiline
+                    rows={4}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <CustomButton text='Submit' />
+                </Grid> */}
+                <form onSubmit={sendMail}>
+                  <div className='row'>
+                    <div className='col-8'>
+                      <input
+                        type='text'
+                        name='name'
+                        className='form-control'
+                        placeholder='Your name'
+                        id=''
+                      />
+                    </div>
+                    <div className='col-8'>
+                      <input
+                        type='email'
+                        name='email'
+                        className='form-control'
+                        placeholder='E-mail Address'
+                        id=''
+                      />
+                    </div>
+                    <div className='col-8'>
+                      <input
+                        type='text'
+                        name='subject'
+                        className='form-control'
+                        placeholder='Subject'
+                        id=''
+                      />
+                    </div>
+                    <div className='col-8'>
+                      <textarea
+                        name='message'
+                        id=''
+                        cols='30'
+                        rows='8'
+                        placeholder='Your Message'
+                      ></textarea>
+                    </div>
+                    <div className='btn-wrap'>
+                      <input
+                        type='submit'
+                        className='btn'
+                        value='Send Message'
+                      />
+                    </div>
+                  </div>
+                </form>
+              </Grid>
             </Grid>
           </Grid>
         </Grid>
 
-        <Grid item className='section-title'>
-          <span></span>
-          <Typography variant='h6'>Contact Information</Typography>
-        </Grid>
-        <Grid item xs={12}>
-          <Grid container spacing={12}>
-            <Grid item xs={12}>
-              <Typography className='contactinfo'>
-                <span>Address: </span> {resumeData.address}
-              </Typography>
+        <Grid item xs={12} lg={5}>
+          <Grid container className='ContactMargin'>
+            <Grid item className='section-title'>
+              <span></span>
+              <Typography variant='h6'>Contact Information</Typography>
             </Grid>
+
             <Grid item xs={12}>
-              <Typography className='contactinfo'>
-                <span>Phone: </span> {resumeData.phone}
-              </Typography>
+              <Grid container spacing={12}>
+                <Grid item xs={12}>
+                  <Typography className='contactinfo'>
+                    <span>Address: </span> {resumeData.adress}
+                  </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography className='contactinfo'>
+                    <span>Phone: </span> {resumeData.phone}
+                  </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography className='contactinfo'>
+                    <span>Email: </span> {resumeData.email}
+                  </Typography>
+                </Grid>
+              </Grid>
             </Grid>
+
             <Grid item xs={12}>
-              <Typography className='contactinfo'>
-                <span>Email: </span> {resumeData.email}
-              </Typography>
+              <Grid container className='contactInfo-SocialCon'>
+                {Object.keys(resumeData.socials).map((key) => (
+                  <Grid item className='contactInfo-social'>
+                    <a href={resumeData.socials[key].link}>
+                      {resumeData.socials[key].icon}
+                    </a>
+                  </Grid>
+                ))}
+              </Grid>
             </Grid>
           </Grid>
         </Grid>
