@@ -2,9 +2,11 @@ import {
   AssignmentOutlined,
   Facebook,
   GitHub,
+  Language,
   LinkedIn,
   Twitter,
   WebOutlined,
+  YouTube,
 } from '@material-ui/icons';
 import React from 'react';
 
@@ -121,6 +123,56 @@ Communicating technical issues in an understandable manner to the team and clien
     {
       title: 'SOURCE CONTROL',
       describtion: ['Git', 'GitHub', 'Bitbucket', 'Jira Software'],
+    },
+  ],
+
+  portfolio: [
+    {
+      tag: 'React',
+      image: 'https://unsplash.com/photos/8pb7Hq539Zw',
+      title: 'My React Project',
+      description: 'small description is needed',
+      links: [
+        { link: 'hhtps://www.google.com', icon: <YouTube /> },
+        { link: 'https://github.com/azmu0520', icon: <GitHub /> },
+        { link: 'hhtps://www.google.com', icon: <Language /> },
+      ],
+    },
+    {
+      tag: 'React',
+      image: 'https://unsplash.com/photos/8pb7Hq539Zw',
+      title: 'My React Project',
+      description: 'small description is needed',
+
+      links: [
+        { link: 'hhtps://www.google.com', icon: <YouTube /> },
+        { link: 'https://github.com/azmu0520', icon: <GitHub /> },
+        { link: 'hhtps://www.google.com', icon: <Language /> },
+      ],
+    },
+    {
+      tag: 'Javascript',
+      image: 'https://unsplash.com/photos/8pb7Hq539Zw',
+      title: 'My React Project',
+      description: 'small description is needed',
+
+      links: [
+        { link: 'hhtps://www.google.com', icon: <YouTube /> },
+        { link: 'https://github.com/azmu0520', icon: <GitHub /> },
+        { link: 'hhtps://www.google.com', icon: <Language /> },
+      ],
+    },
+    {
+      tag: 'HTML',
+      image: 'https://unsplash.com/photos/8pb7Hq539Zw',
+      title: 'My React Project',
+      description: 'small description is needed',
+
+      links: [
+        { link: 'hhtps://www.google.com', icon: <YouTube /> },
+        { link: 'https://github.com/azmu0520', icon: <GitHub /> },
+        { link: 'hhtps://www.google.com', icon: <Language /> },
+      ],
     },
   ],
 };
