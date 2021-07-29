@@ -17,8 +17,8 @@ const Resume = () => {
 
     emailjs
       .sendForm(
-        'gmail',
-        'template_zlsls36',
+        'service_q7yahvo',
+        'template_t1cdm6l',
         e.target,
         'user_67JngnoFNDpDLTCnk62Zm'
       )
@@ -126,7 +126,7 @@ const Resume = () => {
             </Grid>
             <Grid item xs={12}>
               <Grid container spacing={2}>
-                {/* <Grid item xs={12} sm={6}>
+                <Grid item xs={12} sm={6}>
                   <TextField fullWidth name='name' label='Name' />
                 </Grid>
                 <Grid item xs={12} sm={6}>
@@ -143,54 +143,7 @@ const Resume = () => {
                 </Grid>
                 <Grid item xs={12}>
                   <CustomButton text='Submit' />
-                </Grid> */}
-                <form onSubmit={sendMail}>
-                  <div className='row'>
-                    <div className='col-8'>
-                      <input
-                        type='text'
-                        name='name'
-                        className='form-control'
-                        placeholder='Your name'
-                        id=''
-                      />
-                    </div>
-                    <div className='col-8'>
-                      <input
-                        type='email'
-                        name='email'
-                        className='form-control'
-                        placeholder='E-mail Address'
-                        id=''
-                      />
-                    </div>
-                    <div className='col-8'>
-                      <input
-                        type='text'
-                        name='subject'
-                        className='form-control'
-                        placeholder='Subject'
-                        id=''
-                      />
-                    </div>
-                    <div className='col-8'>
-                      <textarea
-                        name='message'
-                        id=''
-                        cols='30'
-                        rows='8'
-                        placeholder='Your Message'
-                      ></textarea>
-                    </div>
-                    <div className='btn-wrap'>
-                      <input
-                        type='submit'
-                        className='btn'
-                        value='Send Message'
-                      />
-                    </div>
-                  </div>
-                </form>
+                </Grid>
               </Grid>
             </Grid>
           </Grid>
