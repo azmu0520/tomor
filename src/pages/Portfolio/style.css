@@ -1,0 +1,64 @@
+/* tabs */
+.custom-tabs .active {
+  color: var(--main-color);
+}
+
+.customTab-item {
+  padding: 0 !important ;
+  min-width: 2rem !important ;
+  min-height: 1rem !important;
+
+  margin-right: 20px !important ;
+  text-transform: inherit !important ;
+  font-size: 14px !important ;
+  font-weight: 400 !important ;
+  outline-width: 0 !important ;
+}
+
+/* Card */
+
+.customCard {
+  height: 100%;
+  max-width: 350px;
+  box-shadow: 0 0 48px 0 rgba(4, 6, 4, 0.08) !important ;
+  border-radius: 5px;
+  overflow: hidden;
+  outline-width: 0px !important ;
+}
+
+.customCard-img {
+  height: 140px;
+}
+
+.customCard-title {
+  font-weight: 500;
+}
+.customCard-describtion {
+  color: gray;
+}
+
+/* dialog */
+.dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+}
+.dialog-img {
+  max-height: 300px;
+  width: 100px;
+  object-fit: cover;
+  object-position: center center;
+}
+.dialog-describtin {
+  margin-top: 10px !important;
+}
+.dialog-action {
+  justify-content: center !important;
+  margin-bottom: 10px;
+}
+.dialog-icon {
+  color: darkslategray;
+  margin: 0 12px;
+  cursor: pointer;
+}
