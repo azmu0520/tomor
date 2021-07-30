@@ -9,14 +9,19 @@ import {
   Tab,
   Tabs,
   Typography,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions,
 } from '@material-ui/core';
 import './style.css';
 import resumeData from '../../utils/resumeData';
 
 const Portfolio = () => {
   const [tabs, setTabs] = useState('All');
+  const [dialog, setDialog] = useState(false);
   return (
-    <Grid container className='section'>
+    <Grid container spacing={1} className='section'>
       <Grid item className='section-title'>
         <span></span>
         <Typography variant='h6'>Portfolio</Typography>
@@ -42,36 +47,70 @@ const Portfolio = () => {
                 label={tag}
                 value={tag}
                 className={
-                  tabs == 'All' ? 'customTab-item active' : 'customTab-item'
+                  tabs == tag ? 'customTab-item active' : 'customTab-item'
                 }
               />
             )
           )}
         </Tabs>
       </Grid>
+      {/* Projects */}
       <Grid item xs={12}>
         <Grid container spacing={4}>
           {resumeData.portfolio.map((project) => (
             <>
               {tabs == project.tag || tabs == 'All' ? (
-                <Grow in timeout={1500}>
-                  <Grid item>
-                    <Card>
+                <Grid item xs={12} sm={6} lg={3}>
+                  <Grow in timeout={1500}>
+                    <Card
+                      className='customCard'
+                      onClick={() => setDialog(project)}
+                    >
                       <CardActionArea>
-                        <CardMedia />
+                        <CardMedia
+                          className='customCard-img'
+                          image={project.image}
+                          title={project.title}
+                        />
                         <CardContent>
-                          <Typography>{project.title}</Typography>
-                          <Typography>{project.description}</Typography>
+                          <Typography className='customCard-title'>
+                            {project.title}
+                          </Typography>
+                          <Typography
+                            className='customCard-describtion'
+                            variant='body2'
+                          >
+                            {project.caption}
+                          </Typography>
                         </CardContent>
                       </CardActionArea>
                     </Card>
-                  </Grid>
-                </Grow>
+                  </Grow>
+                </Grid>
               ) : null}
             </>
           ))}
         </Grid>
       </Grid>
+      <Dialog className='dialog' open={dialog} onClose={() => setDialog(false)}>
+        <DialogTitle onClose={() => setDialog(false)}>
+          {dialog.title}
+        </DialogTitle>
+        <img src={dialog.image} alt='' className='dialog-img' />
+        <DialogContent>
+          {' '}
+          <Typography className='dialog-description'>
+            {dialog.description}
+          </Typography>{' '}
+        </DialogContent>
+        <DialogActions className='dialog-action'>
+          {dialog?.links?.map((link) => (
+            <a href={link.link} target='_blank' className='dialog-icon'>
+              {link.icon}
+            </a>
+          ))}
+        </DialogActions>
+      </Dialog>
     </Grid>
   );
 };

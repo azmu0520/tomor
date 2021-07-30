@@ -129,9 +129,11 @@ Communicating technical issues in an understandable manner to the team and clien
   portfolio: [
     {
       tag: 'React',
-      image: 'https://unsplash.com/photos/8pb7Hq539Zw',
+      image:
+        'https://images.unsplash.com/photo-1618711103795-a20af977b6e9?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDU5fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
       title: 'My React Project',
       description: 'small description is needed',
+      caption: 'This is just caption',
       links: [
         { link: 'hhtps://www.google.com', icon: <YouTube /> },
         { link: 'https://github.com/azmu0520', icon: <GitHub /> },
@@ -140,9 +142,11 @@ Communicating technical issues in an understandable manner to the team and clien
     },
     {
       tag: 'React',
-      image: 'https://unsplash.com/photos/8pb7Hq539Zw',
+      image:
+        'https://images.unsplash.com/photo-1618711103795-a20af977b6e9?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDU5fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
       title: 'My React Project',
       description: 'small description is needed',
+      caption: 'This is just caption',
 
       links: [
         { link: 'hhtps://www.google.com', icon: <YouTube /> },
@@ -152,9 +156,11 @@ Communicating technical issues in an understandable manner to the team and clien
     },
     {
       tag: 'Javascript',
-      image: 'https://unsplash.com/photos/8pb7Hq539Zw',
+      image:
+        'https://images.unsplash.com/photo-1618711103795-a20af977b6e9?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDU5fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
       title: 'My React Project',
       description: 'small description is needed',
+      caption: 'This is just caption',
 
       links: [
         { link: 'hhtps://www.google.com', icon: <YouTube /> },
@@ -164,9 +170,11 @@ Communicating technical issues in an understandable manner to the team and clien
     },
     {
       tag: 'HTML',
-      image: 'https://unsplash.com/photos/8pb7Hq539Zw',
+      image:
+        'https://images.unsplash.com/photo-1618711103795-a20af977b6e9?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDU5fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
       title: 'My React Project',
       description: 'small description is needed',
+      caption: 'This is just caption',
 
       links: [
         { link: 'hhtps://www.google.com', icon: <YouTube /> },
