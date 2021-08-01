@@ -98,10 +98,9 @@ const Portfolio = () => {
         </DialogTitle>
         <img src={dialog.image} alt='' className='dialog-img' />
         <DialogContent>
-          {' '}
           <Typography className='dialog-description'>
             {dialog.description}
-          </Typography>{' '}
+          </Typography>
         </DialogContent>
         <DialogActions className='dialog-action'>
           {dialog?.links?.map((link) => (
