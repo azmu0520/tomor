@@ -133,10 +133,10 @@ Communicating technical issues in an understandable manner to the team and clien
     {
       tag: 'React',
       image:
-        'https://images.unsplash.com/photo-1618711103795-a20af977b6e9?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDU5fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-      title: 'My React Project',
+        'https://images.unsplash.com/photo-1601158935942-52255782d322?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dGVzbGF8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      title: 'Tesla Clone',
       description: 'small description is needed',
-      caption: 'This is just caption',
+      caption: 'Tried to clone Tesla Website',
       links: [
         { link: 'hhtps://www.google.com', icon: <YouTube /> },
         { link: 'https://github.com/azmu0520', icon: <GitHub /> },
@@ -146,10 +146,38 @@ Communicating technical issues in an understandable manner to the team and clien
     {
       tag: 'React',
       image:
-        'https://images.unsplash.com/photo-1618711103795-a20af977b6e9?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDU5fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-      title: 'My React Project',
+        'https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmVhY3Rqc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      title: 'Context_API',
       description: 'small description is needed',
-      caption: 'This is just caption',
+      caption: 'Practical Experience with React',
+
+      links: [
+        { link: 'hhtps://www.google.com', icon: <YouTube /> },
+        { link: 'https://github.com/azmu0520', icon: <GitHub /> },
+        { link: 'hhtps://www.google.com', icon: <Language /> },
+      ],
+    },
+    {
+      tag: 'React',
+      image:
+        'https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8b25saW5lJTIwc2hvcHBpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      title: 'Luna Online Shopping',
+      description: 'small description is needed',
+      caption: 'Shopping website',
+
+      links: [
+        { link: 'hhtps://www.google.com', icon: <YouTube /> },
+        { link: 'https://github.com/azmu0520', icon: <GitHub /> },
+        { link: 'hhtps://www.google.com', icon: <Language /> },
+      ],
+    },
+    {
+      tag: 'React',
+      image:
+        'https://images.unsplash.com/photo-1565891741441-64926e441838?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9naXN0aWNzJTIwY2VudGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      title: 'Trailer-prime',
+      description: 'small description is needed',
+      caption: 'Logistics center ',
 
       links: [
         { link: 'hhtps://www.google.com', icon: <YouTube /> },
@@ -160,10 +188,11 @@ Communicating technical issues in an understandable manner to the team and clien
     {
       tag: 'Javascript',
       image:
-        'https://images.unsplash.com/photo-1618711103795-a20af977b6e9?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDU5fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-      title: 'My React Project',
+        'https://images.unsplash.com/photo-1607871583590-10131167f88b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzl8fGNhbGVuZGFyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+
+      title: 'Calendar',
       description: 'small description is needed',
-      caption: 'This is just caption',
+      caption: 'Practical Experience with Javascript',
 
       links: [
         { link: 'hhtps://www.google.com', icon: <YouTube /> },
@@ -174,10 +203,11 @@ Communicating technical issues in an understandable manner to the team and clien
     {
       tag: 'HTML',
       image:
-        'https://images.unsplash.com/photo-1618711103795-a20af977b6e9?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDU5fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-      title: 'My React Project',
+        'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8M2QlMjBhbmltYXRpb258ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+
+      title: '3D  Animation',
       description: 'small description is needed',
-      caption: 'This is just caption',
+      caption: 'Practical Experience with Html and Css',
 
       links: [
         { link: 'hhtps://www.google.com', icon: <YouTube /> },

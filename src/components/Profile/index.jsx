@@ -10,16 +10,10 @@ import TimelineContent from '@material-ui/lab/TimelineContent';
 import './Profile.css';
 import CustomButton from '../Button';
 import GetAppRoundedIcon from '@material-ui/icons/GetAppRounded';
-import jsPDF from 'jspdf';
+// import jsPDF from 'jspdf';
 import resumeCV from '../../assets/images/myresume.pdf';
 
 const Profile = () => {
-  const onDownload = () => {
-    var doc = new jsPDF('landscape', 'px', 'a4', 'false');
-    doc.addImage(resumeCV, 'PDF', 65, 20, 29, 400);
-    doc.addPage();
-    doc.save('a.pdf');
-  };
   const CustomTimelineItem = ({ title, text, link }) => (
     <TimelineItem>
       <TimeLineCustomSeparator />
@@ -63,11 +57,7 @@ const Profile = () => {
           ))}
         </CustomTimeLine>
         <div className='btn-wrap'>
-          <CustomButton
-            onClick={onDownload}
-            text={'Download Cv'}
-            icon={<GetAppRoundedIcon />}
-          />
+          <CustomButton text={'Download Cv'} icon={<GetAppRoundedIcon />} />
         </div>
       </ProfileInfo>
     </ProfileShadow>
