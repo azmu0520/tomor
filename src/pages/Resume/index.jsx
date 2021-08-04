@@ -180,7 +180,7 @@ const Resume = () => {
               <Grid container className='contactInfo-SocialCon'>
                 {Object.keys(resumeData.socials).map((key) => (
                   <Grid item className='contactInfo-social'>
-                    <a href={resumeData.socials[key].link}>
+                    <a target='_blank' href={resumeData.socials[key].link}>
                       {resumeData.socials[key].icon}
                     </a>
                   </Grid>
