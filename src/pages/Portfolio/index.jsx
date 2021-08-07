@@ -41,9 +41,10 @@ const Portfolio = () => {
               tabs == 'All' ? 'customTab-item active' : 'customTab-item'
             }
           />
-          {[...new Set(resumeData.portfolio.map((item) => item.tag))].map(
-            (tag) => (
+          {[...new Set(resumeData.portfolio.map((v) => v.tag))].map(
+            (tag, i) => (
               <Tab
+                key={i}
                 label={tag}
                 value={tag}
                 className={

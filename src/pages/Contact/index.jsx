@@ -3,7 +3,7 @@ import { Grid, Typography, TextField } from '@material-ui/core';
 import resumeData from '../../utils/resumeData';
 import CustomButton from '../../components/Button';
 import emailjs from 'emailjs-com';
-import { Form, MianWrap, ItemWrap, Input, textArea } from './style';
+import { Form, MianWrap, ItemWrap, Input, TextArea } from './style';
 
 const Contact = () => {
   const sendMail = (e) => {
@@ -28,15 +28,15 @@ const Contact = () => {
   };
   return (
     <div>
-      <Grid container className='section marginTop'>
+      <Grid container={true} className='section marginTop'>
         <Grid item xs={12} lg={7}>
-          <Grid container>
+          <Grid container={true}>
             <Grid item className='section-title'>
               <span></span>
               <Typography variant='h6'>Contact Form</Typography>
             </Grid>
             <Grid item xs={12}>
-              <Grid container spacing={2}>
+              <Grid container={true}>
                 <Form onSubmit={sendMail}>
                   <MianWrap>
                     <ItemWrap>
@@ -53,7 +53,7 @@ const Contact = () => {
                       <Input type='text' placeholder='Subject' name='subject' />
                     </ItemWrap>
                     <ItemWrap>
-                      <textArea
+                      <TextArea
                         type='text'
                         cols='30'
                         rows='8'
@@ -94,14 +94,14 @@ const Contact = () => {
         </Grid>
 
         <Grid item xs={12} lg={5}>
-          <Grid container className='ContactMargin'>
+          <Grid container={true} className='ContactMargin'>
             <Grid item className='section-title'>
               <span></span>
               <Typography variant='h6'>Contact Information</Typography>
             </Grid>
 
             <Grid item xs={12}>
-              <Grid container spacing={12}>
+              <Grid container={true}>
                 <Grid item xs={12}>
                   <Typography className='contactinfo'>
                     <span>Address: </span> {resumeData.adress}
@@ -121,9 +121,9 @@ const Contact = () => {
             </Grid>
 
             <Grid item xs={12}>
-              <Grid container className='contactInfo-SocialCon'>
+              <Grid container={true} className='contactInfo-SocialCon'>
                 {Object.keys(resumeData.socials).map((key) => (
-                  <Grid item className='contactInfo-social'>
+                  <Grid key={key} item className='contactInfo-social'>
                     <a target='_blank' href={resumeData.socials[key].link}>
                       {resumeData.socials[key].icon}
                     </a>

@@ -10,7 +10,7 @@ import TimelineContent from '@material-ui/lab/TimelineContent';
 import './Profile.css';
 import CustomButton from '../Button';
 import GetAppRoundedIcon from '@material-ui/icons/GetAppRounded';
-// import jsPDF from 'jspdf';
+
 import resumeCV from '../../assets/images/myresume.pdf';
 
 const Profile = () => {
@@ -50,6 +50,7 @@ const Profile = () => {
           <CustomTimelineItem title='Mail ' text={resumeData.email} />
           {Object.keys(resumeData.socials).map((key) => (
             <CustomTimelineItem
+              key={key}
               title={key}
               text={resumeData.socials[key].text}
               link={resumeData.socials[key].link}

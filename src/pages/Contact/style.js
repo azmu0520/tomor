@@ -24,7 +24,7 @@ export const Input = styled.input`
   margin-right: 2rem;
   outline: none;
 `;
-export const textArea = styled.textarea`
+export const TextArea = styled.textarea`
   border-style: dashed;
   border-width: none;
 `;
