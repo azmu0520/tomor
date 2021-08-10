@@ -134,8 +134,11 @@ Communicating technical issues in an understandable manner to the team and clien
     {
       id: 1,
       tag: 'React',
-      image:
+      image: [
         'https://images.unsplash.com/photo-1601158935942-52255782d322?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dGVzbGF8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+        'https://images.unsplash.com/photo-1587304878428-1b533030e0e7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHRlc2xhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+        'https://images.unsplash.com/photo-1617704548623-340376564e68?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fHRlc2xhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      ],
       title: 'Tesla Clone',
       description: 'small description is needed',
       caption: 'Tried to clone Tesla Website',
@@ -148,8 +151,11 @@ Communicating technical issues in an understandable manner to the team and clien
     {
       id: 2,
       tag: 'React',
-      image:
+      image: [
         'https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmVhY3Rqc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+        'https://images.unsplash.com/photo-1591267990532-e5bdb1b0ceb8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmVhY3QlMjBob29rc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+        'https://images.unsplash.com/photo-1555371363-27a37f8e8c46?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDN8fHJlYWN0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      ],
       title: 'Context_API',
       description: 'small description is needed',
       caption: 'Practical Experience with React',
@@ -163,8 +169,11 @@ Communicating technical issues in an understandable manner to the team and clien
     {
       id: 3,
       tag: 'React',
-      image:
+      image: [
         'https://images.unsplash.com/photo-1601598704991-eef6114775e0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGx1bmElMjBvbmxpbmUlMjBzaG9wcGluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+        'https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8b25saW5lJTIwc3RvcmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+        'https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fG9ubGluZSUyMHN0b3JlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      ],
       title: 'Luna Online Shopping',
       description: 'small description is needed',
       caption: 'Shopping website',
@@ -178,8 +187,11 @@ Communicating technical issues in an understandable manner to the team and clien
     {
       id: 4,
       tag: 'React',
-      image:
+      image: [
         'https://images.unsplash.com/photo-1565891741441-64926e441838?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9naXN0aWNzJTIwY2VudGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+        'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dHJhaWxlciUyMHRydWNrfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+        'https://images.unsplash.com/photo-1566110287564-a41fb6e1854a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDN8fHRyYWlsZXIlMjB0cnVja3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      ],
       title: 'Trailer-prime',
       description: 'small description is needed',
       caption: 'Logistics center ',
@@ -193,8 +205,11 @@ Communicating technical issues in an understandable manner to the team and clien
     {
       id: 5,
       tag: 'Javascript',
-      image:
+      image: [
         'https://images.unsplash.com/photo-1607871583590-10131167f88b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzl8fGNhbGVuZGFyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+        'https://images.unsplash.com/photo-1506784365847-bbad939e9335?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FsZW5kYXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+        'https://images.unsplash.com/photo-1558025137-0b406e9cc169?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2FsZW5kYXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      ],
 
       title: 'Calendar',
       description: 'small description is needed',
@@ -209,8 +224,11 @@ Communicating technical issues in an understandable manner to the team and clien
     {
       id: 6,
       tag: 'HTML',
-      image:
+      image: [
         'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8M2QlMjBhbmltYXRpb258ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+        'https://images.unsplash.com/photo-1518732714860-b62714ce0c59?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fDNkfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+        'https://images.unsplash.com/photo-1585591841924-285043b0c468?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njd8fDNkfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      ],
 
       title: '3D  Animation',
       description: 'small description is needed',

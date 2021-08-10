@@ -16,6 +16,8 @@ import {
 } from '@material-ui/core';
 import './style.css';
 import resumeData from '../../utils/resumeData';
+import styled from 'styled-components';
+import { ImagesGallery } from '../../components/ImagesGallery/ImagesGallry';
 
 const Portfolio = () => {
   const [tabs, setTabs] = useState('All');
@@ -93,16 +95,26 @@ const Portfolio = () => {
           ))}
         </Grid>
       </Grid>
-      <Dialog className='dialog' open={dialog} onClose={() => setDialog(false)}>
+      {/* Dialog */}
+      <Dialog
+        className='dialog'
+        maxWidth={'lg'}
+        open={Boolean(dialog)}
+        fullWidth
+        onClose={() => setDialog(false)}
+      >
         <DialogTitle onClose={() => setDialog(false)}>
           {dialog.title}
         </DialogTitle>
-        <img src={dialog.image} alt='' className='dialog-img' />
         <DialogContent>
+          {dialog.image && <ImagesGallery image={dialog.image} />}
+        </DialogContent>
+        {/* <img src={dialog.image} alt='' className='dialog-img' /> */}
+        <DialogContentStyled>
           <Typography className='dialog-description'>
             {dialog.description}
           </Typography>
-        </DialogContent>
+        </DialogContentStyled>
         <DialogActions className='dialog-action'>
           {dialog?.links?.map((link) => (
             <a href={link.link} target='_blank' className='dialog-icon'>
@@ -116,3 +128,7 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
+const DialogContentStyled = styled(DialogContent)`
+  overflow-y: hidden;
+`;
