@@ -17,7 +17,7 @@ import {
 import './style.css';
 import resumeData from '../../utils/resumeData';
 import styled from 'styled-components';
-import { ImagesGallery } from '../../components/ImagesGallery/ImagesGallry';
+// import { ImagesGallery } from '../../components/ImagesGallery/ImagesGallry';
 
 const Portfolio = () => {
   const [tabs, setTabs] = useState('All');
@@ -106,9 +106,7 @@ const Portfolio = () => {
         <DialogTitle onClose={() => setDialog(false)}>
           {dialog.title}
         </DialogTitle>
-        <DialogContent>
-          {dialog.image && <ImagesGallery image={dialog.image} />}
-        </DialogContent>
+
         {/* <img src={dialog.image} alt='' className='dialog-img' /> */}
         <DialogContentStyled>
           <Typography className='dialog-description'>
