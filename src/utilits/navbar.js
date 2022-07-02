@@ -3,20 +3,20 @@ import Generic from '../components/Generic';
 export const data = [
   {
     id: 1,
-    title: 'Home',
-    path: '/home',
+    title: 'Women',
+    path: '/women',
     Component: Generic,
   },
   {
     id: 2,
-    title: 'About',
-    path: '/about',
+    title: 'Men',
+    path: '/men',
     Component: Generic,
   },
   {
     id: 3,
-    title: 'Login',
-    path: '/login',
+    title: 'Kids',
+    path: '/kids',
     Component: Generic,
   },
 ];
