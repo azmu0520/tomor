@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import { data } from '../../utilits/navbar';
 import { Wrap } from './style';
 import { NavLink, Outlet } from 'react-router-dom';
-
+import { useSelector } from 'react-redux';
 class Navbar extends Component {
   state = {
     active: '/women',
   };
   render() {
+    // let { counter } = useSelector();
     console.log(this.state.active);
     return (
       <>
