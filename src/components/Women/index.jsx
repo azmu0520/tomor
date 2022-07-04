@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-export default class Women extends Component {
+class Women extends Component {
   componentDidMount() {
     fetch('http://localhost:4000/', {
       method: 'POST',
@@ -42,61 +43,25 @@ export default class Women extends Component {
       }
     `,
       }),
-    }).then((res) => {});
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        this.props.dispatch({
+          type: 'setData',
+          payload: res?.data?.categories,
+        });
+      });
   }
-
   render() {
-    const { user, setUser } = this.context;
-    console.log(user, 'o');
+    console.log(this.props);
     return <div>index</div>;
   }
 }
 
-// import React, { useEffect } from 'react';
-// import { useQuery } from 'react-query';
-// export default function Women() {
-//   const endpoint = 'http://localhost:4000/';
-//   const FILMS_QUERY = `
-//   {
-//     categories{
-//       name
-//       products {
-//         id
-//         name
-//         inStock
-//         gallery
-//         description
-//         category
-//         attributes {
-//           id
-//           name
-//           type
-//           items {
-//             displayValue
-//             value
-//             id
-//           }
-//         }
-//         prices {
-//           currency {
-//              label
-//              symbol
-//           }
-//           amount
-//         }
-//         brand
-//       }
-//     }
-//   }
-// `;
-//   useEffect(() => {
-//     fetch(endpoint, {
-//       method: 'POST',
-//       headers: {
-//         'Content-Type': 'application/json',
-//       },
-//       body: JSON.stringify({ query: FILMS_QUERY }),
-//     }).then((res) => console.log(res));
-//   }, []);
-//   return <div>Women</div>;
-// }
+const mapStateToProps = (state) => {
+  return {
+    data: state.data,
+  };
+};
+
+export default connect(mapStateToProps)(Women);
