@@ -30,6 +30,7 @@ Wrap.Cart = styled.div`
   right: 50px;
   cursor: pointer;
   opacity: 0;
+  transition: all 0.3s;
 `;
 
 export const Cards = styled.div`
@@ -44,6 +45,7 @@ Cards.Each = styled.div`
   padding: 16px;
   position: relative;
   &:hover ${Wrap.Cart} {
+    display: ${({ opacity }) => (opacity ? 'flex' : 'none')};
     opacity: 1;
   }
   opacity: ${({ opacity }) => (opacity ? 1 : 0.5)};
@@ -51,6 +53,7 @@ Cards.Each = styled.div`
 Cards.Img = styled.img`
   width: 354px;
   height: 330px;
+  cursor: ${({ opacity }) => (opacity ? 'pointer' : 'no-drop')};
 `;
 Cards.Title = styled.div`
   font-weight: 300;
@@ -66,7 +69,7 @@ Cards.Stock = styled.div`
   font-weight: 400;
   font-size: 24px;
   line-height: 160%;
-  display: ${({ has }) => (has ? 'none' : 'flex')};
+  display: ${({ opacity }) => (opacity ? 'none' : 'flex')};
   align-items: center;
   color: #8d8f9a;
   top: 40%;
@@ -82,4 +85,8 @@ Cards.Price = styled.div`
   color: #1d1f22;
 `;
 
-Cards.Icon = styled(Cart)``;
+Cards.Icon = styled(Cart)`
+  path {
+    fill: #fff;
+  }
+`;

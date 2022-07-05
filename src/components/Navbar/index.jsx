@@ -5,7 +5,7 @@ import { NavLink, Outlet } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 class Navbar extends Component {
   state = {
-    active: '/women',
+    active: '/all',
   };
   render() {
     // let { counter } = useSelector();
