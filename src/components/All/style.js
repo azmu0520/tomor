@@ -45,15 +45,15 @@ Cards.Each = styled.div`
   padding: 16px;
   position: relative;
   &:hover ${Wrap.Cart} {
-    display: ${({ opacity }) => (opacity ? 'flex' : 'none')};
+    display: ${({ opacity }) => (opacity === 'true' ? 'flex' : 'none')};
     opacity: 1;
   }
-  opacity: ${({ opacity }) => (opacity ? 1 : 0.5)};
+  opacity: ${({ opacity }) => (opacity === 'true' ? 1 : 0.5)};
 `;
 Cards.Img = styled.img`
   width: 354px;
   height: 330px;
-  cursor: ${({ opacity }) => (opacity ? 'pointer' : 'no-drop')};
+  cursor: ${({ opacity }) => (opacity === 'true' ? 'pointer' : 'no-drop')};
 `;
 Cards.Title = styled.div`
   font-weight: 300;
@@ -69,7 +69,7 @@ Cards.Stock = styled.div`
   font-weight: 400;
   font-size: 24px;
   line-height: 160%;
-  display: ${({ opacity }) => (opacity ? 'none' : 'flex')};
+  display: ${({ opacity }) => (opacity === 'true' ? 'none' : 'flex')};
   align-items: center;
   color: #8d8f9a;
   top: 40%;

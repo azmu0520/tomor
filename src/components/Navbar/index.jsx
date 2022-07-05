@@ -1,35 +1,24 @@
 import React, { Component } from 'react';
 import { data } from '../../utilits/navbar';
 import { Wrap } from './style';
-import { NavLink, Outlet } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { Link, withRouter } from 'react-router-dom';
 class Navbar extends Component {
-  state = {
-    active: '/all',
-  };
   render() {
-    // let { counter } = useSelector();
-    console.log(this.state.active);
     return (
       <>
         <Wrap>
           <Wrap.Links>
             {data.map((item) => (
-              <NavLink
-                className={'link'}
-                key={item.id}
-                to={item.path}
-                onClick={() => this.setState({ active: item.path })}
-              >
-                <Wrap.Link path={item.path === this.state.active}>
+              <Link className={'link'} key={item.id} to={item.path}>
+                <Wrap.Link path={item?.path === this.props?.location?.pathname}>
                   {item.title}
                 </Wrap.Link>
-              </NavLink>
+              </Link>
             ))}
           </Wrap.Links>
-          <NavLink to='/pdp'>
+          <Link to='/pdp'>
             <Wrap.Logo />
-          </NavLink>
+          </Link>
           <Wrap.Sale>
             <Wrap.Select>
               <Wrap.Option value='usd'>$</Wrap.Option>
@@ -39,10 +28,9 @@ class Navbar extends Component {
             <Wrap.Cart />
           </Wrap.Sale>
         </Wrap>
-        <Outlet />
       </>
     );
   }
 }
 
-export default Navbar;
+export default withRouter(Navbar);

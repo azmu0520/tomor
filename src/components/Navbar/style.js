@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { ReactComponent as logo } from '../../assets/icons/logo.svg';
 import { ReactComponent as cart } from '../../assets/icons/cart.svg';
+
 export const Wrap = styled.div`
   max-width: 1200px;
   width: 100%;
@@ -32,6 +33,9 @@ Wrap.Link = styled.div`
   align-items: center;
   padding: 0 16px;
   height: 100%;
+  .active {
+    color: white !important;
+  }
   border-bottom: ${({ path }) =>
     path ? '2px solid #5ece7b' : '2px solid #fff'};
   font-weight: ${({ path }) => (path ? '600' : '400')} !important;
