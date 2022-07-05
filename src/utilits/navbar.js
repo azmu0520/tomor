@@ -1,23 +1,23 @@
 import Generic from '../components/Generic';
-import Women from '../components/Women';
+import All from '../components/All';
 
 export const data = [
   {
     id: 1,
-    title: 'Women',
-    path: '/women',
-    Component: Women,
+    title: 'All',
+    path: '/all',
+    Component: All,
   },
   {
     id: 2,
-    title: 'Men',
-    path: '/men',
+    title: 'Clothes',
+    path: '/clothes',
     Component: Generic,
   },
   {
     id: 3,
-    title: 'Kids',
-    path: '/kids',
+    title: 'Tech',
+    path: '/tech',
     Component: Generic,
   },
 ];

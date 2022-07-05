@@ -1,4 +1,4 @@
-let initialState = { data: [] };
+let initialState = { data: [], cart: [] };
 
 function reducer(state = initialState, action) {
   switch (action.type) {
@@ -6,6 +6,12 @@ function reducer(state = initialState, action) {
       return {
         ...state,
         data: action.payload,
+      };
+    }
+    case 'setCart': {
+      return {
+        ...state,
+        cart: action.payload,
       };
     }
     default:
