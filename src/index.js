@@ -11,13 +11,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const queryClient = new QueryClient();
 let store = createStore(reduce);
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
+  <Router>
     <Provider store={store}>
-      <Router>
-        <QueryClientProvider client={queryClient}>
-          <Root />
-        </QueryClientProvider>
-      </Router>
+      <QueryClientProvider client={queryClient}>
+        <Root />
+      </QueryClientProvider>
     </Provider>
-  </React.StrictMode>
+  </Router>
+  // </React.StrictMode>
 );

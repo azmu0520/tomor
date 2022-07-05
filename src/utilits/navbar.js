@@ -12,12 +12,12 @@ export const data = [
     id: 2,
     title: 'Clothes',
     path: '/clothes',
-    Component: Generic,
+    Component: All,
   },
   {
     id: 3,
     title: 'Tech',
     path: '/tech',
-    Component: Generic,
+    Component: All,
   },
 ];

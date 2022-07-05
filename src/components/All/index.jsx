@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Cards, Wrap } from './style';
-import { useLocation } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 class All extends Component {
   componentDidMount() {
@@ -13,9 +13,9 @@ class All extends Component {
       body: JSON.stringify({
         query: `
         {   
-          category {
+          categories {
           name
-            products {
+          products {
                       id 
                       name 
                       inStock 
@@ -27,9 +27,9 @@ class All extends Component {
                                   name 
                                   type
                                   items {
-                                  displayValue
-                                  value
-                                  id
+                                        displayValue
+                                        value
+                                        id
                                         }
                                 }
                       prices {
@@ -42,40 +42,47 @@ class All extends Component {
                       brand 
         
                     }
-                  }
+                    }
         }
     `,
       }),
     })
       .then((res) => res.json())
       .then((res) => {
-        console.log(res);
         this.props.dispatch({
           type: 'setData',
-          payload: res?.data?.category?.products,
+          payload: res?.data?.categories,
         });
       });
   }
   render() {
+    let path = this.props?.location?.pathname?.substr(1);
+    console.log(this.props?.data?.filter((i) => i?.name === path));
+
     return (
       <Wrap>
         {this.props?.data ? (
           <>
             <Wrap.Title>Category name</Wrap.Title>
             <Cards>
-              {this.props?.data?.map((item) => (
-                <Cards.Each key={item?.id} opacity={item?.inStock}>
-                  <Cards.Img opacity={item?.inStock} src={item?.gallery[0]} />
-                  <Cards.Title>{item?.name}</Cards.Title>
-                  <Cards.Price>{item?.prices[0]?.amount}</Cards.Price>
-                  <Wrap.Cart>
-                    <Cards.Icon />
-                  </Wrap.Cart>
-                  <Cards.Stock opacity={item?.inStock}>
-                    OUT OF STOCK
-                  </Cards.Stock>
-                </Cards.Each>
-              ))}
+              {this.props?.data
+                ?.filter((i) => i?.name === path)[0]
+                ?.products?.map((item) => (
+                  <Cards.Each key={item?.id} opacity={String(item?.inStock)}>
+                    <Cards.Img
+                      opacity={String(item?.inStock)}
+                      src={item?.gallery[0]}
+                    />
+                    <Cards.Title>{item?.name}</Cards.Title>
+                    <Cards.Price>{item?.prices[0]?.amount}</Cards.Price>
+                    <Wrap.Cart>
+                      <Cards.Icon />
+                    </Wrap.Cart>
+                    <Cards.Stock opacity={String(item?.inStock)}>
+                      OUT OF STOCK
+                    </Cards.Stock>
+                  </Cards.Each>
+                ))}
             </Cards>
           </>
         ) : (
