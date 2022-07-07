@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Cards, Wrap } from './style';
-import { withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class All extends Component {
   componentDidMount() {
@@ -55,24 +55,27 @@ class All extends Component {
         });
       });
   }
+  state = {
+    path: this.props?.location?.pathname,
+  };
   render() {
     let path = this.props?.location?.pathname?.substr(1);
-    console.log(this.props?.data?.filter((i) => i?.name === path));
 
     return (
       <Wrap>
         {this.props?.data ? (
           <>
             <Wrap.Title>Category name</Wrap.Title>
-            <Cards>
-              {this.props?.data
-                ?.filter((i) => i?.name === path)[0]
-                ?.products?.map((item) => (
+            {this?.state?.path === '/' ? (
+              <Cards>
+                {this.props?.data[0]?.products?.map((item) => (
                   <Cards.Each key={item?.id} opacity={String(item?.inStock)}>
-                    <Cards.Img
-                      opacity={String(item?.inStock)}
-                      src={item?.gallery[0]}
-                    />
+                    <Link to={`${item?.category}/${item?.id}`}>
+                      <Cards.Img
+                        opacity={String(item?.inStock)}
+                        src={item?.gallery[0]}
+                      />
+                    </Link>
                     <Cards.Title>{item?.name}</Cards.Title>
                     <Cards.Price>{item?.prices[0]?.amount}</Cards.Price>
                     <Wrap.Cart>
@@ -83,7 +86,31 @@ class All extends Component {
                     </Cards.Stock>
                   </Cards.Each>
                 ))}
-            </Cards>
+              </Cards>
+            ) : (
+              <Cards>
+                {this.props?.data
+                  ?.filter((i) => i?.name === path)[0]
+                  ?.products?.map((item) => (
+                    <Cards.Each key={item?.id} opacity={String(item?.inStock)}>
+                      <Link to={`${item?.category}/${item?.id}`}>
+                        <Cards.Img
+                          opacity={String(item?.inStock)}
+                          src={item?.gallery[0]}
+                        />
+                      </Link>
+                      <Cards.Title>{item?.name}</Cards.Title>
+                      <Cards.Price>{item?.prices[0]?.amount}</Cards.Price>
+                      <Wrap.Cart>
+                        <Cards.Icon />
+                      </Wrap.Cart>
+                      <Cards.Stock opacity={String(item?.inStock)}>
+                        OUT OF STOCK
+                      </Cards.Stock>
+                    </Cards.Each>
+                  ))}
+              </Cards>
+            )}
           </>
         ) : (
           <div>NO DATA</div>
