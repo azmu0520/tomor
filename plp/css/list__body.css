@@ -8,11 +8,6 @@
   flex: 1;
 }
 
-.products__list {
-  flex: 3;
-  height: 1000px;
-}
-
 .sidebar__tabs {
   display: flex;
   flex-direction: column;
@@ -74,4 +69,123 @@
   line-height: 159.5%;
   color: #000000;
   margin-bottom: 8px;
+}
+
+.products__list {
+  flex: 3;
+  display: grid;
+  height: fit-content;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.product__wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  column-gap: 16px;
+}
+
+.heart__icon {
+  margin-left: auto;
+  cursor: pointer;
+  margin-right: 16px;
+}
+
+.sale {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 159.5%;
+  color: #d10101;
+}
+
+.prodcut__header {
+  display: flex;
+  width: 100%;
+  padding: 12px 0 0 16px;
+}
+
+.product__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 159.5%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 4px;
+}
+.product__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 159.5%;
+  text-align: center;
+  color: #000000;
+  opacity: 0.6;
+}
+.product__price {
+  text-align: center;
+}
+
+.product__icons {
+  text-align: center;
+}
+
+.product__icons img {
+  margin-right: 0.4rem;
+}
+
+.product__img {
+  max-width: 100%;
+  max-height: 100%;
+  /* object-fit: cover; */
+}
+
+.img__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 328px;
+  height: 411px;
+}
+
+.product__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 88px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 159.5%;
+  color: #000000;
+  margin-left: auto;
+  margin-right: 50px;
+  margin-bottom: 40px;
+}
+
+.pagination__active {
+  border-bottom: 1px solid #010;
+}
+
+.product__pagination span {
+  cursor: pointer;
+}
+
+.product__pagination span:hover {
+  border-bottom: 1px solid #010;
+}
+
+@media (max-width: 800px) {
+  .products__list {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+  .img__wrapper {
+    width: 167px;
+    height: 209px;
+  }
+  .product__pagination {
+    margin: 0 auto 40px auto;
+  }
+  .product__wrap {
+    margin-bottom: 24px;
+  }
 }
