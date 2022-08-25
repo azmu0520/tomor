@@ -1,0 +1,140 @@
+.swiper4 {
+  max-width: 100%;
+  height: 516px;
+  margin: 48px 40px;
+}
+
+.slide__main__hero {
+  /* flex: 3 !important; */
+}
+
+.slide__main__hero img {
+  width: 100%;
+}
+
+.chanel__section {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+
+.chanel__suptitle {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 172.69%;
+  letter-spacing: 0.205em;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.chanel__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.chanel__product__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.chanel__item {
+  width: 328px;
+  height: 100%;
+  position: relative;
+}
+
+.chanel__icon {
+  position: absolute;
+  top: 16px;
+  right: 22px;
+}
+
+.chanel__img {
+  margin: 22px 0 0 0;
+}
+
+.chanel--next {
+  right: 50px;
+}
+
+.chanel--next,
+.chanel--prev {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  cursor: pointer;
+}
+.chanel--next::after,
+.chanel--prev::after {
+  color: #292929;
+  font-weight: bold;
+  transform: translate(0, 0);
+}
+.favorite__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 40px;
+}
+.favorite__product__list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.list__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.item__image {
+  max-width: 328px;
+  width: 100%;
+}
+
+.favorite__wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  justify-content: space-between;
+}
+
+.item__image {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #000000;
+}
+
+.item__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #000000;
+  margin-top: 8px;
+}
+@media (max-width: 800px) {
+  .chanel__title {
+    font-size: 32px;
+  }
+  .swiper4 {
+    margin: 16px 16px 0 16px;
+    height: fit-content;
+  }
+  .chanel--next {
+    right: 0;
+  }
+  .favorite__section {
+    margin: 0 16px 40px 16px;
+  }
+}
