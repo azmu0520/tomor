@@ -173,6 +173,36 @@
   border-bottom: 1px solid #010;
 }
 
+.product__colors {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 66px;
+  height: 20px;
+}
+
+.color__wrap label {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+.red {
+  position: relative;
+  background: #862626;
+}
+.black {
+  position: relative;
+  background: #000;
+}
+.white {
+  position: relative;
+  background: #fff;
+  border: 1px solid #8f8f8f;
+}
+
 @media (max-width: 800px) {
   .products__list {
     grid-template-columns: 1fr 1fr;
@@ -187,5 +217,8 @@
   }
   .product__wrap {
     margin-bottom: 24px;
+  }
+  .product__colors {
+    display: flex;
   }
 }
