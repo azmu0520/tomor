@@ -4,8 +4,622 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/home/css/style.css" />
+    <title>Pdp</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/pdp/css/style.css" />
+    <link rel="stylesheet" href="/home/css/navbar.css" />
+    <link rel="stylesheet" href="/plp/css/list__body.css" />
+    <link rel="stylesheet" href="/home/css/footer.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   </head>
-  <body></body>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="header__search__wrap descktop__only">
+          <input type="text" placeholder="SEARCH" class="header__input" />
+          <img
+            src="/home/assets/icons/search.svg"
+            alt="search"
+            class="input__icon"
+          />
+        </div>
+        <img
+          src="/home/assets/icons/hamburger.svg"
+          alt="hamburger"
+          class="hamburger mobile__only"
+        />
+        <img src="/home/assets/icons/logo.svg" class="header__title" />
+        <div class="header__icons">
+          <img
+            src="/home/assets/icons/heart.svg"
+            alt="heart"
+            class="descktop__only"
+          />
+          <img
+            src="/home/assets/icons/user.svg"
+            alt="user"
+            class="descktop__only"
+          />
+          <img src="/home/assets/icons/cart.svg" alt="cart" />
+        </div>
+      </div>
+      <ul class="nav__links descktop__only">
+        <li class="link">
+          <a href="#">New</a>
+        </li>
+        <li class="link">
+          <a href="#">Designers</a>
+        </li>
+        <li class="link">
+          <a href="#">Clothes</a>
+        </li>
+        <li class="link">
+          <a href="#">Shoes</a>
+        </li>
+        <li class="link">
+          <a href="#">Accessories</a>
+        </li>
+        <li class="link">
+          <a href="#">Bags</a>
+        </li>
+        <li class="link">
+          <a href="#">Jewlery</a>
+        </li>
+        <li class="link">
+          <a href="#">Beauty</a>
+        </li>
+        <li class="link">
+          <a href="#">Editorial</a>
+        </li>
+        <li class="link">
+          <a href="#">Sale</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="product__details__wrap">
+      <div class="product__img__wrap">
+        <div class="swiper swiper--thumbs">
+          <div class="thumb__wrapper swiper-wrapper">
+            <div class="thumb__img swiper-slide">
+              <img src="/pdp/assets/images/hero.png" alt="hero" />
+            </div>
+            <div class="thumb__img swiper-slide">
+              <img src="/pdp/assets/images/hero2.png" alt="hero" />
+            </div>
+            <div class="thumb__img swiper-slide">
+              <img src="/pdp/assets/images/hero3.png" alt="hero" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper__imgs swiper mySwiper2">
+          <div class="myswiper__wrap swiper-wrapper">
+            <div class="hero__img swiper-slide">
+              <img src="/pdp/assets/images/hero.png" alt="hero" />
+            </div>
+            <div class="hero__img swiper-slide">
+              <img src="/pdp/assets/images/hero2.png" alt="hero" />
+            </div>
+            <div class="hero__img swiper-slide">
+              <img src="/pdp/assets/images/hero3.png" alt="hero" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="product__details">
+        <h1 class="detail__title">Alexander wang</h1>
+        <div class="detail__reaction">
+          <span class="reaction__title">Zipper Mini Dress</span>
+          <img
+            class="reaction__icon"
+            src="/plp/assets/icons/heart.svg"
+            alt="heart"
+          />
+        </div>
+        <div class="detail__price">$8.29.00</div>
+        <div class="detail__payment">
+          Pay as low as $49/mo <a href="#"> Learn More </a>
+        </div>
+        <div class="detail__promocode">
+          <img src="/pdp/assets/icons/ok.svg" alt="" />TW-29382-2
+        </div>
+        <div class="detail__sellect">
+          <div class="select__title">Select Size</div>
+          <img src="/pdp/assets/icons/arrow.svg" alt="arrow" />
+        </div>
+        <a href="#" class="select__cta">Size Guide</a>
+        <div class="detail__colors__wrap">
+          <div class="colors__title">Color: White</div>
+          <div class="detail__colors">
+            <span class="white"></span>
+            <span class="black"></span>
+            <span class="red"></span>
+          </div>
+        </div>
+        <div class="detail__cta">add to bag</div>
+        <div class="detail__tabs">
+          <div class="tabs__header">
+            <div class="header__item item__acitve">Description</div>
+            <div class="header__item">Detail</div>
+            <div class="header__item">Shipping & Return</div>
+            <div class="header__item">The Brand</div>
+          </div>
+          <div class="tab">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+        </div>
+        <div class="sustainability">
+          <div class="sus__title">Sustainability</div>
+          <div class="sus__text">
+            Made with 100% sustainable materials. <a href="#"> Learn More </a>
+          </div>
+          <div class="sus__items">
+            <div class="sus__item">
+              <img
+                class="item__icon"
+                src="/plp/assets/icons/rabbit.svg"
+                alt=""
+              />
+              <span class="item__title">Cruelty-free</span>
+            </div>
+            <div class="sus__item">
+              <img
+                class="item__icon"
+                src="/pdp/assets/icons/recycle.svg"
+                alt=""
+              />
+              <span class="item__title">Cruelty-free</span>
+            </div>
+            <div class="sus__item">
+              <img class="item__icon" src="/plp/assets/icons/barg.svg" alt="" />
+              <span class="item__title">Cruelty-free</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pair__section">
+      <h1 class="pair__title">Pair It With</h1>
+      <div class="pair_product__list swiper swiper3">
+        <div class="swiper-wrapper pair__swiper__wrap">
+          <div class="product__wrap swiper-slide">
+            <div class="prodcut__header">
+              <span class="header__title">New</span>
+              <img
+                src="/plp/assets/icons/heart.svg"
+                alt="heart"
+                class="heart__icon"
+              />
+            </div>
+            <div class="img__wrapper">
+              <img src="/plp/assets/images/product3.png" class="product__img" />
+            </div>
+
+            <div class="product__icons">
+              <img src="/plp/assets/icons/refresh.svg" alt="refresh" />
+              <img src="/plp/assets/icons/barg.svg" alt="refresh" />
+              <img src="/plp/assets/icons/rabbit.svg" alt="refresh" />
+            </div>
+            <div class="product__title">brand name</div>
+            <div class="product__text">
+              Zipper Mini Dress <br />
+              <span class="product__price">$879.00</span>
+            </div>
+            <div class="product__colors">
+              <div class="color__wrap">
+                <input type="checkbox" id="white" class="color__input" hidden />
+                <label for="white" class="white"></label>
+              </div>
+              <div class="color__wrap">
+                <input type="checkbox" id="black" class="color__input" hidden />
+                <label for="black" class="black"></label>
+              </div>
+              <div class="color__wrap">
+                <input type="checkbox" id="red" class="color__input" hidden />
+                <label for="red" class="red active"></label>
+              </div>
+            </div>
+          </div>
+          <div class="product__wrap swiper-slide">
+            <div class="prodcut__header">
+              <span class="header__title">New</span>
+              <img
+                src="/plp/assets/icons/heart.svg"
+                alt="heart"
+                class="heart__icon"
+              />
+            </div>
+            <div class="img__wrapper">
+              <img src="/plp/assets/images/product3.png" class="product__img" />
+            </div>
+
+            <div class="product__icons">
+              <img src="/plp/assets/icons/refresh.svg" alt="refresh" />
+              <img src="/plp/assets/icons/barg.svg" alt="refresh" />
+              <img src="/plp/assets/icons/rabbit.svg" alt="refresh" />
+            </div>
+            <div class="product__title">brand name</div>
+            <div class="product__text">
+              Zipper Mini Dress <br />
+              <span class="product__price">$879.00</span>
+            </div>
+            <div class="product__colors">
+              <div class="color__wrap">
+                <input type="checkbox" id="white" class="color__input" hidden />
+                <label for="white" class="white"></label>
+              </div>
+              <div class="color__wrap">
+                <input type="checkbox" id="black" class="color__input" hidden />
+                <label for="black" class="black"></label>
+              </div>
+              <div class="color__wrap">
+                <input type="checkbox" id="red" class="color__input" hidden />
+                <label for="red" class="red active"></label>
+              </div>
+            </div>
+          </div>
+          <div class="product__wrap swiper-slide">
+            <div class="prodcut__header">
+              <span class="header__title">New</span>
+              <img
+                src="/plp/assets/icons/heart.svg"
+                alt="heart"
+                class="heart__icon"
+              />
+            </div>
+            <div class="img__wrapper">
+              <img src="/plp/assets/images/product3.png" class="product__img" />
+            </div>
+
+            <div class="product__icons">
+              <img src="/plp/assets/icons/refresh.svg" alt="refresh" />
+              <img src="/plp/assets/icons/barg.svg" alt="refresh" />
+              <img src="/plp/assets/icons/rabbit.svg" alt="refresh" />
+            </div>
+            <div class="product__title">brand name</div>
+            <div class="product__text">
+              Zipper Mini Dress <br />
+              <span class="product__price">$879.00</span>
+            </div>
+            <div class="product__colors">
+              <div class="color__wrap">
+                <input type="checkbox" id="white" class="color__input" hidden />
+                <label for="white" class="white"></label>
+              </div>
+              <div class="color__wrap">
+                <input type="checkbox" id="black" class="color__input" hidden />
+                <label for="black" class="black"></label>
+              </div>
+              <div class="color__wrap">
+                <input type="checkbox" id="red" class="color__input" hidden />
+                <label for="red" class="red active"></label>
+              </div>
+            </div>
+          </div>
+          <div class="product__wrap swiper-slide">
+            <div class="prodcut__header">
+              <span class="header__title">New</span>
+              <img
+                src="/plp/assets/icons/heart.svg"
+                alt="heart"
+                class="heart__icon"
+              />
+            </div>
+            <div class="img__wrapper">
+              <img src="/plp/assets/images/product3.png" class="product__img" />
+            </div>
+
+            <div class="product__icons">
+              <img src="/plp/assets/icons/refresh.svg" alt="refresh" />
+              <img src="/plp/assets/icons/barg.svg" alt="refresh" />
+              <img src="/plp/assets/icons/rabbit.svg" alt="refresh" />
+            </div>
+            <div class="product__title">brand name</div>
+            <div class="product__text">
+              Zipper Mini Dress <br />
+              <span class="product__price">$879.00</span>
+            </div>
+            <div class="product__colors">
+              <div class="color__wrap">
+                <input type="checkbox" id="white" class="color__input" hidden />
+                <label for="white" class="white"></label>
+              </div>
+              <div class="color__wrap">
+                <input type="checkbox" id="black" class="color__input" hidden />
+                <label for="black" class="black"></label>
+              </div>
+              <div class="color__wrap">
+                <input type="checkbox" id="red" class="color__input" hidden />
+                <label for="red" class="red active"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next pair__next"></div>
+      </div>
+    </div>
+    <div class="pair__section">
+      <h1 class="pair__title">You May Also Like</h1>
+      <div class="pair_product__list swiper swiper4">
+        <div class="swiper-wrapper pair__swiper__wrap">
+          <div class="product__wrap swiper-slide">
+            <div class="prodcut__header">
+              <span class="header__title">New</span>
+              <img
+                src="/plp/assets/icons/heart.svg"
+                alt="heart"
+                class="heart__icon"
+              />
+            </div>
+            <div class="img__wrapper">
+              <img src="/plp/assets/images/product3.png" class="product__img" />
+            </div>
+
+            <div class="product__icons">
+              <img src="/plp/assets/icons/refresh.svg" alt="refresh" />
+              <img src="/plp/assets/icons/barg.svg" alt="refresh" />
+              <img src="/plp/assets/icons/rabbit.svg" alt="refresh" />
+            </div>
+            <div class="product__title">brand name</div>
+            <div class="product__text">
+              Zipper Mini Dress <br />
+              <span class="product__price">$879.00</span>
+            </div>
+            <div class="product__colors">
+              <div class="color__wrap">
+                <input type="checkbox" id="white" class="color__input" hidden />
+                <label for="white" class="white"></label>
+              </div>
+              <div class="color__wrap">
+                <input type="checkbox" id="black" class="color__input" hidden />
+                <label for="black" class="black"></label>
+              </div>
+              <div class="color__wrap">
+                <input type="checkbox" id="red" class="color__input" hidden />
+                <label for="red" class="red active"></label>
+              </div>
+            </div>
+          </div>
+          <div class="product__wrap swiper-slide">
+            <div class="prodcut__header">
+              <span class="header__title">New</span>
+              <img
+                src="/plp/assets/icons/heart.svg"
+                alt="heart"
+                class="heart__icon"
+              />
+            </div>
+            <div class="img__wrapper">
+              <img src="/plp/assets/images/product3.png" class="product__img" />
+            </div>
+
+            <div class="product__icons">
+              <img src="/plp/assets/icons/refresh.svg" alt="refresh" />
+              <img src="/plp/assets/icons/barg.svg" alt="refresh" />
+              <img src="/plp/assets/icons/rabbit.svg" alt="refresh" />
+            </div>
+            <div class="product__title">brand name</div>
+            <div class="product__text">
+              Zipper Mini Dress <br />
+              <span class="product__price">$879.00</span>
+            </div>
+            <div class="product__colors">
+              <div class="color__wrap">
+                <input type="checkbox" id="white" class="color__input" hidden />
+                <label for="white" class="white"></label>
+              </div>
+              <div class="color__wrap">
+                <input type="checkbox" id="black" class="color__input" hidden />
+                <label for="black" class="black"></label>
+              </div>
+              <div class="color__wrap">
+                <input type="checkbox" id="red" class="color__input" hidden />
+                <label for="red" class="red active"></label>
+              </div>
+            </div>
+          </div>
+          <div class="product__wrap swiper-slide">
+            <div class="prodcut__header">
+              <span class="header__title">New</span>
+              <img
+                src="/plp/assets/icons/heart.svg"
+                alt="heart"
+                class="heart__icon"
+              />
+            </div>
+            <div class="img__wrapper">
+              <img src="/plp/assets/images/product3.png" class="product__img" />
+            </div>
+
+            <div class="product__icons">
+              <img src="/plp/assets/icons/refresh.svg" alt="refresh" />
+              <img src="/plp/assets/icons/barg.svg" alt="refresh" />
+              <img src="/plp/assets/icons/rabbit.svg" alt="refresh" />
+            </div>
+            <div class="product__title">brand name</div>
+            <div class="product__text">
+              Zipper Mini Dress <br />
+              <span class="product__price">$879.00</span>
+            </div>
+            <div class="product__colors">
+              <div class="color__wrap">
+                <input type="checkbox" id="white" class="color__input" hidden />
+                <label for="white" class="white"></label>
+              </div>
+              <div class="color__wrap">
+                <input type="checkbox" id="black" class="color__input" hidden />
+                <label for="black" class="black"></label>
+              </div>
+              <div class="color__wrap">
+                <input type="checkbox" id="red" class="color__input" hidden />
+                <label for="red" class="red active"></label>
+              </div>
+            </div>
+          </div>
+          <div class="product__wrap swiper-slide">
+            <div class="prodcut__header">
+              <span class="header__title">New</span>
+              <img
+                src="/plp/assets/icons/heart.svg"
+                alt="heart"
+                class="heart__icon"
+              />
+            </div>
+            <div class="img__wrapper">
+              <img src="/plp/assets/images/product3.png" class="product__img" />
+            </div>
+
+            <div class="product__icons">
+              <img src="/plp/assets/icons/refresh.svg" alt="refresh" />
+              <img src="/plp/assets/icons/barg.svg" alt="refresh" />
+              <img src="/plp/assets/icons/rabbit.svg" alt="refresh" />
+            </div>
+            <div class="product__title">brand name</div>
+            <div class="product__text">
+              Zipper Mini Dress <br />
+              <span class="product__price">$879.00</span>
+            </div>
+            <div class="product__colors">
+              <div class="color__wrap">
+                <input type="checkbox" id="white" class="color__input" hidden />
+                <label for="white" class="white"></label>
+              </div>
+              <div class="color__wrap">
+                <input type="checkbox" id="black" class="color__input" hidden />
+                <label for="black" class="black"></label>
+              </div>
+              <div class="color__wrap">
+                <input type="checkbox" id="red" class="color__input" hidden />
+                <label for="red" class="red active"></label>
+              </div>
+            </div>
+          </div>
+          <div class="product__wrap swiper-slide">
+            <div class="prodcut__header">
+              <span class="header__title">New</span>
+              <img
+                src="/plp/assets/icons/heart.svg"
+                alt="heart"
+                class="heart__icon"
+              />
+            </div>
+            <div class="img__wrapper">
+              <img src="/plp/assets/images/product3.png" class="product__img" />
+            </div>
+
+            <div class="product__icons">
+              <img src="/plp/assets/icons/refresh.svg" alt="refresh" />
+              <img src="/plp/assets/icons/barg.svg" alt="refresh" />
+              <img src="/plp/assets/icons/rabbit.svg" alt="refresh" />
+            </div>
+            <div class="product__title">brand name</div>
+            <div class="product__text">
+              Zipper Mini Dress <br />
+              <span class="product__price">$879.00</span>
+            </div>
+            <div class="product__colors">
+              <div class="color__wrap">
+                <input type="checkbox" id="white" class="color__input" hidden />
+                <label for="white" class="white"></label>
+              </div>
+              <div class="color__wrap">
+                <input type="checkbox" id="black" class="color__input" hidden />
+                <label for="black" class="black"></label>
+              </div>
+              <div class="color__wrap">
+                <input type="checkbox" id="red" class="color__input" hidden />
+                <label for="red" class="red active"></label>
+              </div>
+            </div>
+          </div>
+          <div class="product__wrap swiper-slide">
+            <div class="prodcut__header">
+              <span class="header__title">New</span>
+              <img
+                src="/plp/assets/icons/heart.svg"
+                alt="heart"
+                class="heart__icon"
+              />
+            </div>
+            <div class="img__wrapper">
+              <img src="/plp/assets/images/product3.png" class="product__img" />
+            </div>
+
+            <div class="product__icons">
+              <img src="/plp/assets/icons/refresh.svg" alt="refresh" />
+              <img src="/plp/assets/icons/barg.svg" alt="refresh" />
+              <img src="/plp/assets/icons/rabbit.svg" alt="refresh" />
+            </div>
+            <div class="product__title">brand name</div>
+            <div class="product__text">
+              Zipper Mini Dress <br />
+              <span class="product__price">$879.00</span>
+            </div>
+            <div class="product__colors">
+              <div class="color__wrap">
+                <input type="checkbox" id="white" class="color__input" hidden />
+                <label for="white" class="white"></label>
+              </div>
+              <div class="color__wrap">
+                <input type="checkbox" id="black" class="color__input" hidden />
+                <label for="black" class="black"></label>
+              </div>
+              <div class="color__wrap">
+                <input type="checkbox" id="red" class="color__input" hidden />
+                <label for="red" class="red active"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next similar__next"></div>
+        <div class="swiper-button-prev similar__prev"></div>
+      </div>
+    </div>
+    <footer>
+      <h3 class="footer__title">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </h3>
+      <div class="newsletter__wrap">
+        <div class="letter__title">Sign up for toward updates</div>
+        <p class="letter__text">
+          Receiving our newsletter with access to our latest collections, events
+          and news.
+        </p>
+        <div class="letter__input__wrap">
+          <input
+            type="text"
+            class="letter__input"
+            placeholder="Email Address"
+          />
+        </div>
+
+        <div class="letter__links">
+          <img src="/home/assets/icons/instagram.svg" alt="instagram" />
+          <img src="/home/assets/icons/facebook.svg" alt="facebook" />
+        </div>
+      </div>
+      <div class="footer__links__wrap">
+        <div class="footer__links">
+          <div class="link__title">Customer Care</div>
+          <div class="link">FAQ</div>
+          <div class="link">Shipping & Returns</div>
+          <div class="link">Contact</div>
+        </div>
+        <div class="footer__links">
+          <div class="link__title">Company</div>
+          <div class="link">About Us</div>
+          <div class="link">Journal</div>
+          <div class="link">Press</div>
+        </div>
+      </div>
+      <div class="footer__brand">© 2021 Toward Brand</div>
+    </footer>
+    <script src="/pdp/js/swiper.js"></script>
+  </body>
 </html>
