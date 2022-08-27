@@ -27,7 +27,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-width: 10%;
+  min-width: 40px;
   /* height: 100%; */
 }
 
@@ -38,7 +38,9 @@
   height: fit-content;
   cursor: pointer;
   max-width: 40px;
+  width: 100%;
   max-height: 40px;
+  height: 100%;
 }
 
 .thumb__img img {
