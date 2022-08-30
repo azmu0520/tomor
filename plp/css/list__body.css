@@ -24,11 +24,19 @@
 
 .tab-content {
   max-height: 0;
-  color: red;
   background: white;
   opacity: 0;
+  display: none;
   padding: 16px 0;
   transition: all 0.35s ease-in-out;
+}
+
+.header__title {
+  font-family: 'Montserrat-SemiBold';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 159.5%;
+  color: #000000;
 }
 
 .tab-label {
@@ -50,16 +58,18 @@
   width: 16px;
   height: 16px;
   text-align: center;
+  transform: rotate(90deg);
   transition: all 0.45s ease-in-out;
 }
 
 .sidebar__input:checked + .tab-label::after {
-  transform: rotate(90deg);
+  transform: rotate(270deg);
 }
 
 .sidebar__input:checked ~ .tab-content {
   max-height: 100vh;
   opacity: 1;
+  display: block;
 }
 
 .tab-content li {
@@ -108,6 +118,7 @@
 }
 
 .product__title {
+  font-family: 'Montserrat-Bold';
   font-weight: 700;
   font-size: 14px;
   line-height: 159.5%;
