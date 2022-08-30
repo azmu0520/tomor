@@ -155,4 +155,10 @@
     height: fit-content;
     padding: 24px 16px;
   }
+  .text__pp {
+    font-size: 20px;
+  }
+  .descktop__only {
+    display: none !important;
+  }
 }

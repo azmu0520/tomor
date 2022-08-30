@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url(/fonts/Montserrat-Regular.otf);
+}
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url(/fonts/Montserrat-Bold.otf);
+}
+@font-face {
+  font-family: 'Mukta Vaani';
+  src: url(/fonts/MuktaVaani-Medium.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat-Regular';
+}
 .product__details__wrap {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
@@ -6,7 +24,9 @@
   height: 900px;
   margin-top: 10px;
 }
-
+.reaction__icon {
+  margin-left: auto;
+}
 .product__img__wrap {
   display: flex;
   width: 100%;
@@ -77,8 +97,7 @@
 
 .product__details {
   display: flex;
-  max-width: 385px;
-  width: 100%;
+  max-width: 500px;
   margin: 0 auto;
   flex-direction: column;
   /* align-items: center; */
@@ -87,6 +106,7 @@
 }
 
 .detail__title {
+  font-family: 'Montserrat-Bold';
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
@@ -112,7 +132,9 @@
   margin: 8px 0;
 }
 .detail__payment a {
-  font-weight: 600;
+  font-family: 'Mukta Vaani';
+  font-style: normal;
+  font-weight: 500;
   font-size: 14px;
   line-height: 159.5%;
   text-decoration-line: underline;
@@ -150,6 +172,8 @@
 }
 
 .select__cta {
+  font-family: 'Mukta Vaani';
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 159.5%;
@@ -312,7 +336,7 @@
 .pair__section {
   display: flex;
   flex-direction: column;
-  padding: 80px 40px 40px 40px;
+  padding: 80px 40px 60px 40px;
 }
 .pair_product__list {
   display: flex;
@@ -322,6 +346,7 @@
 }
 
 .pair__title {
+  font-family: 'Montserrat-Bold';
   font-weight: 600;
   font-size: 32px;
   line-height: 120%;
@@ -333,7 +358,7 @@
   height: fit-content;
 }
 .img__wrapper {
-  margin: 10px 0 30px 0;
+  margin-top: 10px;
 }
 
 .pair__swiper__wrap {
@@ -394,8 +419,9 @@
     font-size: 24px;
     color: #292929;
   }
-  .myswiper__wrap {
-    /* display: block; */
+  .sus__text,
+  .sus__text a {
+    font-size: 12px;
   }
   .swiper-slide {
     max-width: 100%;
@@ -413,13 +439,14 @@
     transform: translate(-50%, 0);
   }
   .pair__section {
-    padding: 40px 16px;
+    padding: 27px 16px 0 16px;
   }
   .pair__next,
   .similar__next {
     right: -10px;
   }
   .pair__title {
+    font-size: 20px;
     margin-bottom: 22px;
   }
   .similar__prev {

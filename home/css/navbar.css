@@ -205,4 +205,11 @@ nav {
   .announcement__bar {
     margin: 0;
   }
+  .announcement__bar::before {
+    width: 40px;
+  }
+
+  .wrapper {
+    animation-duration: 14s;
+  }
 }

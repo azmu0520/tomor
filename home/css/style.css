@@ -240,8 +240,8 @@
   }
 
   .img__wrapper {
-    width: 167px;
-    height: 209px;
+    max-width: 167px;
+    max-height: 209px;
     margin: 0;
   }
   .swiper-button-next::after,

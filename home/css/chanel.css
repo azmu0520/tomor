@@ -88,6 +88,10 @@
   width: 100%;
 }
 
+.chanel--prev {
+  display: none;
+}
+
 .list__item {
   display: flex;
   align-items: center;
@@ -136,5 +140,11 @@
   }
   .favorite__section {
     margin: 0 16px 40px 16px;
+  }
+  .chanel__section {
+    margin: 0 16px;
+  }
+  .chanel--prev {
+    display: flex;
   }
 }
