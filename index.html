@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
@@ -19,6 +15,10 @@
     <link rel="stylesheet" href="/home/css/chanel.css" />
     <link rel="stylesheet" href="/home/css/blog.css" />
     <link rel="stylesheet" href="/home/css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <link rel="stylesheet" href="/home/css/product__collection.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </head>
@@ -55,6 +55,17 @@
           </a>
         </div>
       </div>
+      <!-- <div class="mobile__navbar">
+        <ul class="menu">
+          <li>Home</li>
+          <li>Products List</li>
+          <li>Product details</li>
+          <li>Shoes</li>
+          <li>Accessories</li>
+          <li>Cart</li>
+        </ul>
+      </div> -->
+
       <ul class="nav__links descktop__only">
         <li class="link">
           <a href="/index.html">Home</a>
@@ -87,7 +98,62 @@
           <a href="#">Sale</a>
         </li>
       </ul>
-      <div class="announcement__bar swiper swiper1">
+
+      <div class="announcement__bar">
+        <div class="wrapper">
+          <div class="bar__item">New arrivals</div>
+          <div class="bar__item">
+            <img src="/home/assets/icons/dot.svg" class="dot" alt="dot" />
+            Our spring/summer baG collectioin
+          </div>
+          <div class="bar__item">
+            <img src="/home/assets/icons/dot.svg" class="dot" alt="dot" />
+            Sustainable fashion
+          </div>
+          <div class="bar__item">
+            <img src="/home/assets/icons/dot.svg" class="dot" alt="dot" />
+            Best beauty products
+          </div>
+          <div class="bar__item">
+            <img src="/home/assets/icons/dot.svg" class="dot" alt="dot" />
+            Night time skin routine
+          </div>
+          <div class="bar__item">
+            <img src="/home/assets/icons/dot.svg" class="dot" alt="dot" />
+            comfort & style
+          </div>
+          <div class="bar__item">
+            <img src="/home/assets/icons/dot.svg" class="dot" alt="dot" />
+            Just in high heels
+          </div>
+          <div class="bar__item">
+            <img src="/home/assets/icons/dot.svg" class="dot" alt="dot" />
+            Sustainable fashion
+          </div>
+          <div class="bar__item">
+            <img src="/home/assets/icons/dot.svg" class="dot" alt="dot" />
+            Best beauty products
+          </div>
+          <div class="bar__item">
+            <img src="/home/assets/icons/dot.svg" class="dot" alt="dot" />
+            Sustainable fashion
+          </div>
+          <div class="bar__item">
+            <img src="/home/assets/icons/dot.svg" class="dot" alt="dot" />
+            Best beauty products
+          </div>
+          <div class="bar__item">
+            <img src="/home/assets/icons/dot.svg" class="dot" alt="dot" />
+            Sustainable fashion
+          </div>
+          <div class="bar__item">
+            <img src="/home/assets/icons/dot.svg" class="dot" alt="dot" />
+            Best beauty products
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="announcement__bar swiper swiper1">
         <ul class="swiper-wrapper">
           <li class="swiper-slide bar__item">
             <img src="/home/assets/icons/dot.svg" class="dot" alt="dot" />
@@ -95,7 +161,6 @@
           </li>
           <li class="swiper-slide bar__item">
             <img src="/home/assets/icons/dot.svg" class="dot" alt="dot" />
-
             Our spring/summer baG collectioin
           </li>
           <li class="swiper-slide bar__item">
@@ -122,7 +187,7 @@
             Just in high heels
           </li>
         </ul>
-      </div>
+      </div> -->
     </nav>
     <section class="hero__section">
       <div class="hero__content">
@@ -137,6 +202,7 @@
           <img src="/home/assets/icons/arrow-long.svg" alt="arrow-long" />
         </div>
       </div>
+
       <img src="/home/assets/images/hero.jpg" alt="hero" class="hero__img" />
     </section>
     <div class="products__list">
@@ -159,11 +225,22 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide product_wrap">
             <div class="product__reaction__icon">
-              <img
-                src="/home/assets/icons/user.svg"
-                alt="heart"
-                class="reaction__icon"
-              />
+              <input type="checkbox" id="l1" class="reaction__input" hidden />
+              <label for="l1">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="reaction__icon"
+                >
+                  <path
+                    d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                    stroke="black"
+                  />
+                </svg>
+              </label>
             </div>
             <div class="img__wrapper">
               <img
@@ -179,15 +256,57 @@
           </div>
           <div class="swiper-slide product_wrap">
             <div class="product__reaction__icon">
-              <img
-                src="/home/assets/icons/user.svg"
-                alt="heart"
-                class="reaction__icon"
-              />
+              <input type="checkbox" id="l2" class="reaction__input" hidden />
+              <label for="l2">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="reaction__icon"
+                >
+                  <path
+                    d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                    stroke="black"
+                  />
+                </svg>
+              </label>
             </div>
             <div class="img__wrapper">
               <img
                 src="/home/assets/images/product2.png"
+                class="product__image"
+              />
+            </div>
+            <h3 class="product__title">Alexander wang</h3>
+            <h3 class="product__subtitle">
+              Zipper Mini Dress <br />
+              $879.00
+            </h3>
+          </div>
+          <div class="swiper-slide product_wrap">
+            <div class="product__reaction__icon">
+              <input type="checkbox" id="l3" class="reaction__input" hidden />
+              <label for="l3">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="reaction__icon"
+                >
+                  <path
+                    d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                    stroke="black"
+                  />
+                </svg>
+              </label>
+            </div>
+            <div class="img__wrapper">
+              <img
+                src="/home/assets/images/product3.png"
                 class="product__image"
               />
             </div>
@@ -199,31 +318,22 @@
           </div>
           <div class="swiper-slide product_wrap">
             <div class="product__reaction__icon">
-              <img
-                src="/home/assets/icons/user.svg"
-                alt="heart"
-                class="reaction__icon"
-              />
-            </div>
-            <div class="img__wrapper">
-              <img
-                src="/home/assets/images/product3.png"
-                class="product__image biger__img"
-              />
-            </div>
-            <h3 class="product__title">Gucci</h3>
-            <h3 class="product__subtitle">
-              Zipper Mini Dress <br />
-              $879.00
-            </h3>
-          </div>
-          <div class="swiper-slide product_wrap">
-            <div class="product__reaction__icon">
-              <img
-                src="/home/assets/icons/user.svg"
-                alt="heart"
-                class="reaction__icon"
-              />
+              <input type="checkbox" id="l4" class="reaction__input" hidden />
+              <label for="l4">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="reaction__icon"
+                >
+                  <path
+                    d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                    stroke="black"
+                  />
+                </svg>
+              </label>
             </div>
             <div class="img__wrapper">
               <img
@@ -239,11 +349,22 @@
           </div>
           <div class="swiper-slide product_wrap">
             <div class="product__reaction__icon">
-              <img
-                src="/home/assets/icons/user.svg"
-                alt="heart"
-                class="reaction__icon"
-              />
+              <input type="checkbox" id="l5" class="reaction__input" hidden />
+              <label for="l5">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="reaction__icon"
+                >
+                  <path
+                    d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                    stroke="black"
+                  />
+                </svg>
+              </label>
             </div>
             <div class="img__wrapper">
               <img
@@ -259,11 +380,22 @@
           </div>
           <div class="swiper-slide product_wrap">
             <div class="product__reaction__icon">
-              <img
-                src="/home/assets/icons/user.svg"
-                alt="heart"
-                class="reaction__icon"
-              />
+              <input type="checkbox" id="l6" class="reaction__input" hidden />
+              <label for="l6">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="reaction__icon"
+                >
+                  <path
+                    d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                    stroke="black"
+                  />
+                </svg>
+              </label>
             </div>
             <div class="img__wrapper">
               <img
@@ -279,11 +411,22 @@
           </div>
           <div class="swiper-slide product_wrap">
             <div class="product__reaction__icon">
-              <img
-                src="/home/assets/icons/user.svg"
-                alt="heart"
-                class="reaction__icon"
-              />
+              <input type="checkbox" id="l7" class="reaction__input" hidden />
+              <label for="l7">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="reaction__icon"
+                >
+                  <path
+                    d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                    stroke="black"
+                  />
+                </svg>
+              </label>
             </div>
             <div class="img__wrapper">
               <img
@@ -341,7 +484,7 @@
       <div class="mission__wrap">
         <div class="statment__text">
           <span class="text__title">Our mission</span>
-          <span>
+          <span class="text__pp">
             Lorem ipsum dolor sit amet, consectetur incididunt ut labore et
             dolore magna aliqua.
           </span>
@@ -366,7 +509,7 @@
             alt="collection1"
             class="collection__img"
           />
-          <div class="img__cta mobile">
+          <div class="img__cta descktop__only">
             Shop Now <img src="/home/assets/icons/arrow-long.svg" alt="long" />
           </div>
         </div>
@@ -375,11 +518,27 @@
             <div class="product__column swiper-slide">
               <div class="product_wrap collection--product">
                 <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
+                  <input
+                    type="checkbox"
+                    id="l8"
+                    class="reaction__input"
+                    hidden
                   />
+                  <label for="l8">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="reaction__icon"
+                    >
+                      <path
+                        d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                        stroke="black"
+                      />
+                    </svg>
+                  </label>
                 </div>
                 <div
                   class="img__wrapper wrapper__collection wrapper__collection"
@@ -389,7 +548,7 @@
                     class="product__image"
                   />
                 </div>
-                <h3 class="product__title">Gucci</h3>
+                <h3 class="product__title">Brand name</h3>
                 <h3 class="product__subtitle">
                   Zipper Mini Dress <br />
                   $879.0011
@@ -397,11 +556,27 @@
               </div>
               <div class="product_wrap collection--product">
                 <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
+                  <input
+                    type="checkbox"
+                    id="l9"
+                    class="reaction__input"
+                    hidden
                   />
+                  <label for="l9">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="reaction__icon"
+                    >
+                      <path
+                        d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                        stroke="black"
+                      />
+                    </svg>
+                  </label>
                 </div>
                 <div
                   class="img__wrapper wrapper__collection wrapper__collection"
@@ -411,53 +586,7 @@
                     class="product__image"
                   />
                 </div>
-                <h3 class="product__title">Gucci</h3>
-                <h3 class="product__subtitle">
-                  Zipper Mini Dress <br />
-                  $879.0011
-                </h3>
-              </div>
-            </div>
-            <div class="product__column swiper-slide">
-              <div class="product_wrap collection--product">
-                <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
-                  />
-                </div>
-                <div
-                  class="img__wrapper wrapper__collection wrapper__collection"
-                >
-                  <img
-                    src="/home/assets/images/product1.png"
-                    class="product__image"
-                  />
-                </div>
-                <h3 class="product__title">Gucci</h3>
-                <h3 class="product__subtitle">
-                  Zipper Mini Dress <br />
-                  $879.0011
-                </h3>
-              </div>
-              <div class="product_wrap collection--product">
-                <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
-                  />
-                </div>
-                <div
-                  class="img__wrapper wrapper__collection wrapper__collection"
-                >
-                  <img
-                    src="/home/assets/images/product1.png"
-                    class="product__image"
-                  />
-                </div>
-                <h3 class="product__title">Gucci</h3>
+                <h3 class="product__title">Brand name</h3>
                 <h3 class="product__subtitle">
                   Zipper Mini Dress <br />
                   $879.0011
@@ -467,11 +596,27 @@
             <div class="product__column swiper-slide">
               <div class="product_wrap collection--product">
                 <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
+                  <input
+                    type="checkbox"
+                    id="l10"
+                    class="reaction__input"
+                    hidden
                   />
+                  <label for="l101">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="reaction__icon"
+                    >
+                      <path
+                        d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                        stroke="black"
+                      />
+                    </svg>
+                  </label>
                 </div>
                 <div
                   class="img__wrapper wrapper__collection wrapper__collection"
@@ -481,7 +626,7 @@
                     class="product__image"
                   />
                 </div>
-                <h3 class="product__title">Gucci</h3>
+                <h3 class="product__title">Brand name</h3>
                 <h3 class="product__subtitle">
                   Zipper Mini Dress <br />
                   $879.0011
@@ -489,11 +634,27 @@
               </div>
               <div class="product_wrap collection--product">
                 <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
+                  <input
+                    type="checkbox"
+                    id="l11"
+                    class="reaction__input"
+                    hidden
                   />
+                  <label for="l11">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="reaction__icon"
+                    >
+                      <path
+                        d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                        stroke="black"
+                      />
+                    </svg>
+                  </label>
                 </div>
                 <div
                   class="img__wrapper wrapper__collection wrapper__collection"
@@ -503,21 +664,37 @@
                     class="product__image"
                   />
                 </div>
-                <h3 class="product__title">Gucci</h3>
+                <h3 class="product__title">Brand name</h3>
                 <h3 class="product__subtitle">
                   Zipper Mini Dress <br />
                   $879.0011
                 </h3>
               </div>
             </div>
-            <!-- <div class="product__column swiper-slide">
+            <div class="product__column swiper-slide">
               <div class="product_wrap collection--product">
                 <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
+                  <input
+                    type="checkbox"
+                    id="l12"
+                    class="reaction__input"
+                    hidden
                   />
+                  <label for="l12">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="reaction__icon"
+                    >
+                      <path
+                        d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                        stroke="black"
+                      />
+                    </svg>
+                  </label>
                 </div>
                 <div
                   class="img__wrapper wrapper__collection wrapper__collection"
@@ -527,7 +704,7 @@
                     class="product__image"
                   />
                 </div>
-                <h3 class="product__title">Gucci</h3>
+                <h3 class="product__title">Brand name</h3>
                 <h3 class="product__subtitle">
                   Zipper Mini Dress <br />
                   $879.0011
@@ -535,151 +712,43 @@
               </div>
               <div class="product_wrap collection--product">
                 <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
+                  <input
+                    type="checkbox"
+                    id="l13"
+                    class="reaction__input"
+                    hidden
                   />
+                  <label for="l13">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="reaction__icon"
+                    >
+                      <path
+                        d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                        stroke="black"
+                      />
+                    </svg>
+                  </label>
                 </div>
-                <div class="img__wrapper wrapper__collection">
+                <div
+                  class="img__wrapper wrapper__collection wrapper__collection"
+                >
                   <img
                     src="/home/assets/images/product1.png"
                     class="product__image"
                   />
                 </div>
-                <h3 class="product__title">Gucci</h3>
+                <h3 class="product__title">Brand name</h3>
                 <h3 class="product__subtitle">
                   Zipper Mini Dress <br />
-                  $879.00
+                  $879.0011
                 </h3>
               </div>
             </div>
-            <div class="product__column swiper-slide">
-              <div class="product_wrap collection--product">
-                <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
-                  />
-                </div>
-                <div class="img__wrapper wrapper__collection">
-                  <img
-                    src="/home/assets/images/product1.png"
-                    class="product__image"
-                  />
-                </div>
-                <h3 class="product__title">Gucci</h3>
-                <h3 class="product__subtitle">
-                  Zipper Mini Dress <br />
-                  $879.00
-                </h3>
-              </div>
-              <div class="product_wrap collection--product">
-                <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
-                  />
-                </div>
-                <div class="img__wrapper wrapper__collection">
-                  <img
-                    src="/home/assets/images/product1.png"
-                    class="product__image"
-                  />
-                </div>
-                <h3 class="product__title">Gucci</h3>
-                <h3 class="product__subtitle">
-                  Zipper Mini Dress <br />
-                  $879.00
-                </h3>
-              </div>
-            </div>
-            <div class="product__column swiper-slide">
-              <div class="product_wrap collection--product">
-                <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
-                  />
-                </div>
-                <div class="img__wrapper wrapper__collection">
-                  <img
-                    src="/home/assets/images/product1.png"
-                    class="product__image"
-                  />
-                </div>
-                <h3 class="product__title">Gucci</h3>
-                <h3 class="product__subtitle">
-                  Zipper Mini Dress <br />
-                  $879.00
-                </h3>
-              </div>
-              <div class="product_wrap collection--product">
-                <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
-                  />
-                </div>
-                <div class="img__wrapper wrapper__collection">
-                  <img
-                    src="/home/assets/images/product1.png"
-                    class="product__image"
-                  />
-                </div>
-                <h3 class="product__title">Gucci</h3>
-                <h3 class="product__subtitle">
-                  Zipper Mini Dress <br />
-                  $879.00
-                </h3>
-              </div>
-            </div>
-            <div class="product__column swiper-slide">
-              <div class="product_wrap collection--product">
-                <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
-                  />
-                </div>
-                <div class="img__wrapper wrapper__collection">
-                  <img
-                    src="/home/assets/images/product1.png"
-                    class="product__image"
-                  />
-                </div>
-                <h3 class="product__title">Gucci</h3>
-                <h3 class="product__subtitle">
-                  Zipper Mini Dress <br />
-                  $879.00
-                </h3>
-              </div>
-              <div class="product_wrap collection--product">
-                <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
-                  />
-                </div>
-                <div class="img__wrapper wrapper__collection">
-                  <img
-                    src="/home/assets/images/product1.png"
-                    class="product__image"
-                  />
-                </div>
-                <h3 class="product__title">Gucci</h3>
-                <h3 class="product__subtitle">
-                  Zipper Mini Dress <br />
-                  $879.00
-                </h3>
-              </div>
-            </div> -->
           </div>
           <div class="swiper-button-next collection__next__btn"></div>
           <div class="swiper-button-prev collection__prev__btn"></div>
@@ -705,11 +774,27 @@
           <div class="swiper-slide chanel__product__wrap">
             <div class="product_wrap chanel__item">
               <div class="product__reaction__icon chanel__icon">
-                <img
-                  src="/home/assets/icons/user.svg"
-                  alt="heart"
-                  class="reaction__icon"
+                <input
+                  type="checkbox"
+                  id="l14"
+                  class="reaction__input"
+                  hidden
                 />
+                <label for="l14">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="reaction__icon"
+                  >
+                    <path
+                      d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                      stroke="black"
+                    />
+                  </svg>
+                </label>
               </div>
               <div class="img__wrapper chanel__img">
                 <img
@@ -725,11 +810,27 @@
             </div>
             <div class="product_wrap chanel__item">
               <div class="product__reaction__icon chanel__icon">
-                <img
-                  src="/home/assets/icons/user.svg"
-                  alt="heart"
-                  class="reaction__icon"
+                <input
+                  type="checkbox"
+                  id="l16"
+                  class="reaction__input"
+                  hidden
                 />
+                <label for="l16">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="reaction__icon"
+                  >
+                    <path
+                      d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                      stroke="black"
+                    />
+                  </svg>
+                </label>
               </div>
               <div class="img__wrapper chanel__img">
                 <img
@@ -747,11 +848,27 @@
           <div class="swiper-slide chanel__product__wrap">
             <div class="product_wrap chanel__item">
               <div class="product__reaction__icon chanel__icon">
-                <img
-                  src="/home/assets/icons/user.svg"
-                  alt="heart"
-                  class="reaction__icon"
+                <input
+                  type="checkbox"
+                  id="l17"
+                  class="reaction__input"
+                  hidden
                 />
+                <label for="l17">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="reaction__icon"
+                  >
+                    <path
+                      d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                      stroke="black"
+                    />
+                  </svg>
+                </label>
               </div>
               <div class="img__wrapper chanel__img">
                 <img
@@ -767,11 +884,27 @@
             </div>
             <div class="product_wrap chanel__item">
               <div class="product__reaction__icon chanel__icon">
-                <img
-                  src="/home/assets/icons/user.svg"
-                  alt="heart"
-                  class="reaction__icon"
+                <input
+                  type="checkbox"
+                  id="l18"
+                  class="reaction__input"
+                  hidden
                 />
+                <label for="l18">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="reaction__icon"
+                  >
+                    <path
+                      d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                      stroke="black"
+                    />
+                  </svg>
+                </label>
               </div>
               <div class="img__wrapper chanel__img">
                 <img
@@ -789,11 +922,27 @@
           <div class="swiper-slide chanel__product__wrap">
             <div class="product_wrap chanel__item">
               <div class="product__reaction__icon chanel__icon">
-                <img
-                  src="/home/assets/icons/user.svg"
-                  alt="heart"
-                  class="reaction__icon"
+                <input
+                  type="checkbox"
+                  id="l19"
+                  class="reaction__input"
+                  hidden
                 />
+                <label for="l19">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="reaction__icon"
+                  >
+                    <path
+                      d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                      stroke="black"
+                    />
+                  </svg>
+                </label>
               </div>
               <div class="img__wrapper chanel__img">
                 <img
@@ -809,11 +958,27 @@
             </div>
             <div class="product_wrap chanel__item">
               <div class="product__reaction__icon chanel__icon">
-                <img
-                  src="/home/assets/icons/user.svg"
-                  alt="heart"
-                  class="reaction__icon"
+                <input
+                  type="checkbox"
+                  id="l20"
+                  class="reaction__input"
+                  hidden
                 />
+                <label for="l20">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="reaction__icon"
+                  >
+                    <path
+                      d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                      stroke="black"
+                    />
+                  </svg>
+                </label>
               </div>
               <div class="img__wrapper chanel__img">
                 <img
@@ -831,11 +996,27 @@
           <div class="swiper-slide chanel__product__wrap">
             <div class="product_wrap chanel__item">
               <div class="product__reaction__icon chanel__icon">
-                <img
-                  src="/home/assets/icons/user.svg"
-                  alt="heart"
-                  class="reaction__icon"
+                <input
+                  type="checkbox"
+                  id="l21"
+                  class="reaction__input"
+                  hidden
                 />
+                <label for="l21">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="reaction__icon"
+                  >
+                    <path
+                      d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                      stroke="black"
+                    />
+                  </svg>
+                </label>
               </div>
               <div class="img__wrapper chanel__img">
                 <img
@@ -851,11 +1032,27 @@
             </div>
             <div class="product_wrap chanel__item">
               <div class="product__reaction__icon chanel__icon">
-                <img
-                  src="/home/assets/icons/user.svg"
-                  alt="heart"
-                  class="reaction__icon"
+                <input
+                  type="checkbox"
+                  id="l22"
+                  class="reaction__input"
+                  hidden
                 />
+                <label for="l22">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="reaction__icon"
+                  >
+                    <path
+                      d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                      stroke="black"
+                    />
+                  </svg>
+                </label>
               </div>
               <div class="img__wrapper chanel__img">
                 <img
@@ -873,11 +1070,27 @@
           <div class="swiper-slide chanel__product__wrap">
             <div class="product_wrap chanel__item">
               <div class="product__reaction__icon chanel__icon">
-                <img
-                  src="/home/assets/icons/user.svg"
-                  alt="heart"
-                  class="reaction__icon"
+                <input
+                  type="checkbox"
+                  id="l23"
+                  class="reaction__input"
+                  hidden
                 />
+                <label for="l23">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="reaction__icon"
+                  >
+                    <path
+                      d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                      stroke="black"
+                    />
+                  </svg>
+                </label>
               </div>
               <div class="img__wrapper chanel__img">
                 <img
@@ -893,11 +1106,27 @@
             </div>
             <div class="product_wrap chanel__item">
               <div class="product__reaction__icon chanel__icon">
-                <img
-                  src="/home/assets/icons/user.svg"
-                  alt="heart"
-                  class="reaction__icon"
+                <input
+                  type="checkbox"
+                  id="l24"
+                  class="reaction__input"
+                  hidden
                 />
+                <label for="l24">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="reaction__icon"
+                  >
+                    <path
+                      d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                      stroke="black"
+                    />
+                  </svg>
+                </label>
               </div>
               <div class="img__wrapper chanel__img">
                 <img
@@ -913,7 +1142,7 @@
             </div>
           </div>
         </div>
-        <div class="swiper-button-prev chanel--prev"></div>
+        <!-- <div class="swiper-button-prev chanel--prev"></div> -->
         <div class="swiper-button-next chanel--next"></div>
       </div>
     </div>
@@ -926,11 +1155,27 @@
             <div class="product__column swiper-slide">
               <div class="product_wrap collection--product">
                 <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
+                  <input
+                    type="checkbox"
+                    id="l25"
+                    class="reaction__input"
+                    hidden
                   />
+                  <label for="l25">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="reaction__icon"
+                    >
+                      <path
+                        d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                        stroke="black"
+                      />
+                    </svg>
+                  </label>
                 </div>
                 <div
                   class="img__wrapper wrapper__collection wrapper__collection"
@@ -948,11 +1193,27 @@
               </div>
               <div class="product_wrap collection--product">
                 <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
+                  <input
+                    type="checkbox"
+                    id="l26"
+                    class="reaction__input"
+                    hidden
                   />
+                  <label for="l26">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="reaction__icon"
+                    >
+                      <path
+                        d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                        stroke="black"
+                      />
+                    </svg>
+                  </label>
                 </div>
                 <div
                   class="img__wrapper wrapper__collection wrapper__collection"
@@ -972,11 +1233,27 @@
             <div class="product__column swiper-slide">
               <div class="product_wrap collection--product">
                 <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
+                  <input
+                    type="checkbox"
+                    id="l27"
+                    class="reaction__input"
+                    hidden
                   />
+                  <label for="l27">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="reaction__icon"
+                    >
+                      <path
+                        d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                        stroke="black"
+                      />
+                    </svg>
+                  </label>
                 </div>
                 <div
                   class="img__wrapper wrapper__collection wrapper__collection"
@@ -994,11 +1271,27 @@
               </div>
               <div class="product_wrap collection--product">
                 <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
+                  <input
+                    type="checkbox"
+                    id="l28"
+                    class="reaction__input"
+                    hidden
                   />
+                  <label for="l28">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="reaction__icon"
+                    >
+                      <path
+                        d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                        stroke="black"
+                      />
+                    </svg>
+                  </label>
                 </div>
                 <div
                   class="img__wrapper wrapper__collection wrapper__collection"
@@ -1018,11 +1311,27 @@
             <div class="product__column swiper-slide">
               <div class="product_wrap collection--product">
                 <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
+                  <input
+                    type="checkbox"
+                    id="l29"
+                    class="reaction__input"
+                    hidden
                   />
+                  <label for="l29">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="reaction__icon"
+                    >
+                      <path
+                        d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                        stroke="black"
+                      />
+                    </svg>
+                  </label>
                 </div>
                 <div
                   class="img__wrapper wrapper__collection wrapper__collection"
@@ -1040,11 +1349,27 @@
               </div>
               <div class="product_wrap collection--product">
                 <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
+                  <input
+                    type="checkbox"
+                    id="l30"
+                    class="reaction__input"
+                    hidden
                   />
+                  <label for="l30">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="reaction__icon"
+                    >
+                      <path
+                        d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                        stroke="black"
+                      />
+                    </svg>
+                  </label>
                 </div>
                 <div
                   class="img__wrapper wrapper__collection wrapper__collection"
@@ -1064,11 +1389,27 @@
             <div class="product__column swiper-slide">
               <div class="product_wrap collection--product">
                 <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
+                  <input
+                    type="checkbox"
+                    id="l31"
+                    class="reaction__input"
+                    hidden
                   />
+                  <label for="l31">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="reaction__icon"
+                    >
+                      <path
+                        d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                        stroke="black"
+                      />
+                    </svg>
+                  </label>
                 </div>
                 <div
                   class="img__wrapper wrapper__collection wrapper__collection"
@@ -1086,11 +1427,27 @@
               </div>
               <div class="product_wrap collection--product">
                 <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
+                  <input
+                    type="checkbox"
+                    id="l32"
+                    class="reaction__input"
+                    hidden
                   />
+                  <label for="l32">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="reaction__icon"
+                    >
+                      <path
+                        d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                        stroke="black"
+                      />
+                    </svg>
+                  </label>
                 </div>
                 <div class="img__wrapper wrapper__collection">
                   <img
@@ -1108,11 +1465,27 @@
             <div class="product__column swiper-slide">
               <div class="product_wrap collection--product">
                 <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
+                  <input
+                    type="checkbox"
+                    id="l33"
+                    class="reaction__input"
+                    hidden
                   />
+                  <label for="l33">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="reaction__icon"
+                    >
+                      <path
+                        d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                        stroke="black"
+                      />
+                    </svg>
+                  </label>
                 </div>
                 <div class="img__wrapper wrapper__collection">
                   <img
@@ -1128,11 +1501,27 @@
               </div>
               <div class="product_wrap collection--product">
                 <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
+                  <input
+                    type="checkbox"
+                    id="l34"
+                    class="reaction__input"
+                    hidden
                   />
+                  <label for="l34">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="reaction__icon"
+                    >
+                      <path
+                        d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                        stroke="black"
+                      />
+                    </svg>
+                  </label>
                 </div>
                 <div class="img__wrapper wrapper__collection">
                   <img
@@ -1150,11 +1539,27 @@
             <div class="product__column swiper-slide">
               <div class="product_wrap collection--product">
                 <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
+                  <input
+                    type="checkbox"
+                    id="l35"
+                    class="reaction__input"
+                    hidden
                   />
+                  <label for="l35">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="reaction__icon"
+                    >
+                      <path
+                        d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                        stroke="black"
+                      />
+                    </svg>
+                  </label>
                 </div>
                 <div class="img__wrapper wrapper__collection">
                   <img
@@ -1170,11 +1575,27 @@
               </div>
               <div class="product_wrap collection--product">
                 <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
+                  <input
+                    type="checkbox"
+                    id="l36"
+                    class="reaction__input"
+                    hidden
                   />
+                  <label for="l36">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="reaction__icon"
+                    >
+                      <path
+                        d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                        stroke="black"
+                      />
+                    </svg>
+                  </label>
                 </div>
                 <div class="img__wrapper wrapper__collection">
                   <img
@@ -1192,11 +1613,27 @@
             <div class="product__column swiper-slide">
               <div class="product_wrap collection--product">
                 <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
+                  <input
+                    type="checkbox"
+                    id="l37"
+                    class="reaction__input"
+                    hidden
                   />
+                  <label for="l37">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="reaction__icon"
+                    >
+                      <path
+                        d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                        stroke="black"
+                      />
+                    </svg>
+                  </label>
                 </div>
                 <div class="img__wrapper wrapper__collection">
                   <img
@@ -1212,11 +1649,27 @@
               </div>
               <div class="product_wrap collection--product">
                 <div class="product__reaction__icon--collection">
-                  <img
-                    src="/home/assets/icons/user.svg"
-                    alt="heart"
-                    class="reaction__icon"
+                  <input
+                    type="checkbox"
+                    id="l38"
+                    class="reaction__input"
+                    hidden
                   />
+                  <label for="l38">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="reaction__icon"
+                    >
+                      <path
+                        d="M14.4789 5.92177L14.4805 5.93872L14.4831 5.95552C14.4898 5.99719 14.5558 6.45299 14.371 7.23413L14.371 7.23428C14.1052 8.3591 13.4905 9.38782 12.5851 10.2079L7.96096 14.3278L3.41646 10.2091L3.41617 10.2088C2.51009 9.38888 1.89484 8.35944 1.62897 7.23426L1.62895 7.23417C1.44407 6.45241 1.51028 5.99697 1.51686 5.95655L1.51971 5.93907L1.52131 5.92144C1.70678 3.87997 3.12805 2.5 4.81195 2.5C5.92979 2.5 6.93625 3.09522 7.52979 4.10955L7.95662 4.83897L8.39044 4.11369C8.98748 3.11552 10.0431 2.50027 11.188 2.50027C12.8721 2.50027 14.2932 3.88022 14.4789 5.92177Z"
+                        stroke="black"
+                      />
+                    </svg>
+                  </label>
                 </div>
                 <div class="img__wrapper wrapper__collection">
                   <img
@@ -1241,7 +1694,7 @@
             alt="collection1"
             class="collection__img"
           />
-          <div class="img__cta mobile">
+          <div class="img__cta descktop__only">
             Shop Now <img src="/home/assets/icons/arrow-long.svg" alt="long" />
           </div>
         </div>

@@ -25,6 +25,7 @@ const swiper2 = new Swiper('.swiper2', {
 });
 
 const swiper3 = new Swiper('.swiper3', {
+  // spaceBetween: 40,
   slidesPerView: 1,
   navigation: {
     nextEl: '.swiper-button-next',

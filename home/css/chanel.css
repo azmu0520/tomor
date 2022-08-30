@@ -4,10 +4,6 @@
   margin: 48px 40px;
 }
 
-.slide__main__hero {
-  /* flex: 3 !important; */
-}
-
 .slide__main__hero img {
   width: 100%;
 }
@@ -16,6 +12,7 @@
   display: flex;
   align-items: center;
   /* justify-content: center; */
+  margin: 0 40px;
   flex-direction: column;
 }
 
@@ -30,6 +27,8 @@
 }
 
 .chanel__title {
+  font-family: 'Montserrat-Bold';
+
   font-weight: 700;
   font-size: 48px;
   line-height: 100%;
@@ -116,6 +115,7 @@
 }
 
 .item__title {
+  font-family: 'Montserrat-Bold';
   font-weight: 600;
   font-size: 16px;
   line-height: 160%;
