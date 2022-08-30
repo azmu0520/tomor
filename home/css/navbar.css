@@ -20,7 +20,7 @@ nav {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 48px;
+  min-height: 48px;
   justify-content: space-between;
   padding: 40px 40px 24px 40px;
 }
@@ -35,6 +35,89 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.announcement__bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 33px;
+  background: rgb(255, 245, 235);
+  position: relative;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 172.69%;
+  text-align: center;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #000000;
+  overflow: hidden;
+  margin-top: 24px;
+}
+
+.wrapper {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  /* justify-content: center; */
+  overflow: hidden;
+  position: absolute;
+  right: -150%;
+
+  animation-name: scrollAds;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.mobile__navbar {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  /* clip-path: circle(25px at calc(100% - 45px) 45px); */
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(-135deg, rgb(255, 245, 235), #fff);
+  z-index: 10000;
+  text-align: center;
+}
+
+@keyframes scrollAds {
+  0% {
+    right: -150%;
+  }
+  100% {
+    right: 150%;
+  }
+}
+.announcement__bar::before {
+  content: '';
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+  background: linear-gradient(
+    to right,
+    rgba(255, 245, 235, 1) 0%,
+    rgba(255, 245, 235, 0.4) 100%
+  );
+}
+
+/* .announcement__bar::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+} */
+
+.announcement__bar::before {
+  left: 0;
+  top: 0;
 }
 
 .header__input {
@@ -72,23 +155,9 @@ nav {
   text-decoration: none;
   margin-right: 20px;
 }
-
-.announcement__bar {
+.link {
   display: flex;
   align-items: center;
-  padding: 0 74px !important;
-  width: 100%;
-  height: 33px;
-  background: #fff5eb;
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 172.69%;
-  text-align: center;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: #000000;
-  overflow: hidden;
-  margin-top: 24px;
 }
 
 .swiper-wrapper {
@@ -101,7 +170,7 @@ nav {
 }
 .dot {
   max-width: 5px;
-  margin-right: 2rem;
+  margin-right: 24px;
 }
 
 .bar__item {
@@ -110,6 +179,7 @@ nav {
   justify-content: center;
   flex-wrap: nowrap;
   min-width: fit-content;
+  margin-right: 24px;
 }
 
 .mobile__only {

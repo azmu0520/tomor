@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url(/fonts/Montserrat-Regular.otf);
+}
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url(/fonts/Montserrat-Bold.otf);
+}
 .best__seller__wrap {
   display: flex;
   width: 100%;
@@ -22,6 +30,7 @@
   color: #000000;
 }
 .left__title {
+  font-family: 'Montserrat-Bold';
   font-weight: 800;
   font-size: 48px;
   line-height: 100%;
@@ -35,6 +44,7 @@
   margin-top: 16px;
 }
 .descripti__title {
+  font-family: 'Montserrat-Bold';
   font-weight: 600;
   font-size: 32px;
   line-height: 120%;
@@ -42,6 +52,7 @@
   color: #000000;
 }
 .desct__cta {
+  font-family: 'Montserrat-Bold';
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -64,6 +75,7 @@
   max-width: 1300px;
   align-items: flex-end;
   margin: auto;
+  padding-bottom: 10px;
 }
 
 .mission__statment {
@@ -91,6 +103,14 @@
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 9px;
+}
+
+.text__pp {
+  font-family: 'Montserrat-Bold';
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  color: #000000;
 }
 .mission__cta {
   min-width: fit-content;
